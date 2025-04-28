@@ -55,7 +55,7 @@ const Header = () => {
               type="text"
               name="search"
               id="search"
-              className="w-full  p-[1rem] placeholder:text-[1.2rem] placeholder:text-[rgba(0,0,0,0.33)] placeholder:font-switzer"
+              className="w-full  p-[1rem] placeholder:text-[1.2rem] placeholder:text-[rgba(0,0,0,0.33)] placeholder:font-switzer ring-0 outline-hidden focus:ring-0 focus:outline-hidden"
               placeholder="Search here"
             />
           </div>
