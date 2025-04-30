@@ -1,7 +1,7 @@
 import React from "react";
 import TitleComp from "../TitleComp";
 import { specialDishes } from "@/data/specialDishes";
-import { FoodItem } from "@/types/foodItem";
+import { DishItem } from "@/types/dishItem";
 import Image from "next/image";
 
 const SpecialDishes = () => {
@@ -9,7 +9,7 @@ const SpecialDishes = () => {
     <section>
       <TitleComp title="our special dishes" />
       <div className="grid grid-cols-4 gap-[3rem]  mt-[3.5rem]">
-        {specialDishes.map((dish: FoodItem) => (
+        {specialDishes.map((dish: DishItem) => (
           <div
             key={dish.name}
             className="flex items-center flex-col text-center"

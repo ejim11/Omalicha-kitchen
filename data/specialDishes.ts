@@ -1,10 +1,10 @@
-import { FoodItem } from "@/types/foodItem";
+import { DishItem } from "@/types/dishItem";
 import riceDishesImg from "../assets/home/rice-dishes.png";
 import pepperSoupImg from "../assets/home/pepper-soup.png";
 import traditionalSoupImg from "../assets/home/traditional-soup.png";
 import omaSpecialImg from "../assets/home/oma-special.png";
 
-export const specialDishes: FoodItem[] = [
+export const specialDishes: DishItem[] = [
   {
     name: "rice dishes",
     description:
