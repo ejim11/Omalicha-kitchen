@@ -1,6 +1,7 @@
 import React from "react";
 import Hero from "./Hero";
 import SpecialDishes from "./SpecialDishes";
+import PlaceYourOrder from "./PlaceYourOrder";
 
 const HomeComp = () => {
   return (
@@ -8,6 +9,7 @@ const HomeComp = () => {
       <Hero />
       <div className="bg-[#F4F3E8] px-[9rem] py-[3rem]">
         <SpecialDishes />
+        <PlaceYourOrder />
       </div>
     </main>
   );
