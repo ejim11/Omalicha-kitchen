@@ -3,7 +3,7 @@ import React from "react";
 
 const PlaceYourOrder = () => {
   return (
-    <section className="h-[64rem] w-full mt-[4rem] bg-place-order rounded-[1.6rem] overflow-hidden px-[7rem] flex flex-col justify-center">
+    <section className="h-[64rem] w-full mt-[8rem] bg-place-order rounded-[1.6rem] overflow-hidden px-[7rem] flex flex-col justify-center">
       <div className="text-white w-[50%]">
         <p className="font-switzer font-semibold text-[3.6rem] leading-[4.6rem] mb-[1.6rem]">
           Looking for an African restaurant near you? Welcome to Omalicha
