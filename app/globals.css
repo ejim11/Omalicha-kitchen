@@ -18,6 +18,12 @@
     background-position: center;
     background-repeat: no-repeat;
   }
+  .bg-place-order {
+    background-image: url("../assets/home/place-order.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
 
 @layer base {
