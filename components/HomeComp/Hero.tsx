@@ -14,7 +14,7 @@ const Hero = () => {
         </p>
         <Link
           href={"/menu"}
-          className="bg-secondary-1 px-[3rem] py-[1rem] rounded-[1.6rem] mt-[2.4rem] font-switzer font-medium block w-max text-[2rem]"
+          className="bg-secondary-1 px-[3rem] py-[1rem] rounded-[1.6rem] mt-[2.4rem] font-switzer font-medium block w-max text-[2rem] text-black"
         >
           Explore our dishes
         </Link>
