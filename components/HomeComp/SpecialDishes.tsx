@@ -14,7 +14,7 @@ const SpecialDishes = () => {
             key={dish.name}
             className="flex items-center flex-col text-center"
           >
-            <div className="w-[20rem] relative ">
+            <div className="w-[20rem] relative z-20">
               <Image
                 src={dish.image}
                 alt={`${dish.name} image`}
@@ -27,7 +27,7 @@ const SpecialDishes = () => {
                 ${dish.price}
               </div>
             </div>
-            <div className="bg-[#F9FDE3] h-[30rem] border border-[#D1D1D1] rounded-tl-[5rem] rounded-tr-[1rem] rounded-br-[5rem] rounded-bl-[1rem] p-[2rem] -mt-[8rem] flex items-center justify-center flex-col">
+            <div className="bg-[#F9FDE3] h-[30rem] border border-[#D1D1D1] rounded-tl-[5rem] rounded-tr-[1rem] rounded-br-[5rem] rounded-bl-[1rem] p-[2rem] -mt-[8rem] flex items-center justify-center flex-col z-10">
               <p className="text-primary-1 font-switzer font-bold text-[1.8rem] capitalize mt-[3.5rem] leading-[2.6rem] mb-[2rem]">
                 {dish.name}
               </p>
