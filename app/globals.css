@@ -66,4 +66,34 @@
     /* Webkit browsers (Chrome, Safari, newer Edge) */
     -webkit-appearance: textfield;
   }
+
+  /* slick styling */
+  .slick-arrow {
+    display: none !important;
+  }
+
+  .slick-dots {
+    bottom: -4rem !important;
+  }
+
+  .slick-dots li {
+    width: 1.2rem !important;
+    height: 1.2rem !important;
+    background-color: #d9d9d9 !important;
+    margin-right: 1rem !important;
+    border-radius: 100% !important;
+    -webkit-border-radius: 100% !important;
+    -moz-border-radius: 100% !important;
+    -ms-border-radius: 100% !important;
+    -o-border-radius: 100% !important;
+  }
+
+  .slick-dots li.slick-active {
+    background-color: #6cc57f !important;
+    border: 1px #245127 solid !important;
+  }
+
+  .slick-dots li button::before {
+    content: "" !important;
+  }
 }
