@@ -2,6 +2,7 @@ import React from "react";
 import TitleComp from "../TitleComp";
 import Image from "next/image";
 import flowerImg from "../../assets/home/flower-1.png";
+import flowerImg2 from "../../assets/home/flower-2.png";
 import { orderDishes } from "@/data/orderDishes";
 import { DishItem } from "@/types/dishItem";
 import DishItemContainer from "../DishItemContainer";
@@ -13,6 +14,16 @@ const OrderDishes = () => {
       <div className="w-[13.6rem] absolute -top-[1rem] -left-[6rem]">
         <Image
           src={flowerImg}
+          alt="flower image"
+          priority
+          width={200}
+          height={200}
+          className="w-full h-full"
+        />
+      </div>
+      <div className="w-[13.6rem] absolute -bottom-[1rem] -right-[16rem]">
+        <Image
+          src={flowerImg2}
           alt="flower image"
           priority
           width={200}
