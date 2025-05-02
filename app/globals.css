@@ -99,4 +99,31 @@
   .slick-dots li button::before {
     content: "" !important;
   }
+
+  /* styling for the scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+    /* display: none; */
+  }
+
+  @media all and (max-width: 850px) {
+    ::-webkit-scrollbar {
+      width: 0px;
+    }
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #78a57b;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #245127;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #459a4b;
+  }
 }
