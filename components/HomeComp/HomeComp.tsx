@@ -6,6 +6,7 @@ import OrderDishes from "./OrderDishes";
 import OurGallery from "./OurGallery";
 import Testimonial from "./Testimonial";
 import WhyChooseUs from "./WhyChooseUs";
+import StockUpForTheWeek from "./StockUpForTheWeek";
 
 const HomeComp = () => {
   return (
@@ -18,6 +19,7 @@ const HomeComp = () => {
         <OurGallery />
         <Testimonial />
         <WhyChooseUs />
+        <StockUpForTheWeek />
       </div>
     </main>
   );
