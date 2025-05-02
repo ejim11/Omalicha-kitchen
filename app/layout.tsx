@@ -44,7 +44,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${poppins.variable} ${ojuju.variable} ${switzer.variable} antialiased relative`}
+        className={`${inter.variable} ${poppins.variable} ${ojuju.variable} ${switzer.variable} antialiased relative bg-[#F4F3E8]`}
       >
         <Header />
         {children}
