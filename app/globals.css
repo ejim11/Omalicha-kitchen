@@ -24,6 +24,9 @@
     background-position: center;
     background-repeat: no-repeat;
   }
+  .bg-stockup {
+    background: linear-gradient(to left, #baaf25 0%, #73824d 43%, #8eb797 98%);
+  }
 }
 
 @layer base {
