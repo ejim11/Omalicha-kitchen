@@ -45,7 +45,7 @@ const Testimonial = () => {
         />
       </div>
       <TitleComp title={"testimonial"} />
-      <div className="w-[50%] mx-auto my-[6rem]">
+      <div className="w-[50%] mx-auto my-[6rem] p-[1rem]">
         <Slider {...settings}>
           {testimonials.map((testimonial) => (
             <div key={testimonial.customerName} className="px-[2rem]">
