@@ -5,6 +5,7 @@ import PlaceYourOrder from "./PlaceYourOrder";
 import OrderDishes from "./OrderDishes";
 import OurGallery from "./OurGallery";
 import Testimonial from "./Testimonial";
+import WhyChooseUs from "./WhyChooseUs";
 
 const HomeComp = () => {
   return (
@@ -16,6 +17,7 @@ const HomeComp = () => {
         <OrderDishes />
         <OurGallery />
         <Testimonial />
+        <WhyChooseUs />
       </div>
     </main>
   );
