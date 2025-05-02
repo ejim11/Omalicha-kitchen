@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import logoImg from "../assets/logo.svg";
 import Image from "next/image";
@@ -5,8 +6,11 @@ import { NavLink } from "@/types/navLink";
 import Link from "next/link";
 import { GoSearch } from "react-icons/go";
 import { FiShoppingCart } from "react-icons/fi";
+import { usePathname } from "next/navigation";
 
 const Header = () => {
+  const pathname = usePathname();
+
   const navLinks: NavLink[] = [
     {
       title: "Our Menu",
@@ -28,7 +32,7 @@ const Header = () => {
 
   return (
     <header className="h-[10rem] flex items-center px-[9rem]   w-full  bg-[rgba(255,255,255,0.66)] justify-between relative z-[50]">
-      <div className="">
+      <Link href={"/"} className="w-[10rem]">
         <Image
           src={logoImg}
           alt="omalicha kitchen logo image"
@@ -37,12 +41,19 @@ const Header = () => {
           width={200}
           height={200}
         />
-      </div>
+      </Link>
       <nav className="flex-1">
         <ul className="flex items-center justify-evenly  w-full">
           {navLinks.map((link: NavLink) => (
-            <li key={link.title} className="font-switzer text-black">
-              <Link href={link.link}>{link.title}</Link>
+            <li key={link.title} className="font-switzer  text-[1.8rem]">
+              <Link
+                href={link.link}
+                className={`${
+                  pathname.includes(link.link) ? "text-primary-1" : "text-black"
+                }  hover:text-primary-1 transition-all duration-150 ease-in`}
+              >
+                {link.title}
+              </Link>
             </li>
           ))}
         </ul>
