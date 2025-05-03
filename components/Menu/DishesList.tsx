@@ -10,7 +10,7 @@ const DishesList = ({ dishItems }: { dishItems: DishItem[] }) => {
   const sectionRef: any = useRef(null);
 
   const [itemOffset, setItemOffset] = useState(0);
-  const itemsPerPage = 4;
+  const itemsPerPage = 8;
 
   const endOffset = itemOffset + itemsPerPage;
   const currentItems = [...dishItems].slice(itemOffset, endOffset);
