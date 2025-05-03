@@ -2,11 +2,16 @@ import { DishItem } from "@/types/dishItem";
 import { traditionalSoups } from "./traditionalSoups";
 import { riceDishes } from "./riceDishes";
 import { pepperSoups } from "./pepperSoups";
+import { specials } from "./specials";
 
 export type MenuItem = {
-  title: string;
-  text: string;
-  dishItems: DishItem[];
+  filter: string;
+  items: { title: string; text: string; dishItems: DishItem[] }[];
 };
 
-export const menu: MenuItem[] = [traditionalSoups, riceDishes, pepperSoups];
+export const menu: MenuItem[] = [
+  traditionalSoups,
+  riceDishes,
+  pepperSoups,
+  specials,
+];
