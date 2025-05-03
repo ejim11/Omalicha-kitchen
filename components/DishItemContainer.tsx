@@ -15,7 +15,7 @@ const DishItemContainer = ({
   price: number;
 }) => {
   return (
-    <div className="flex flex-col border border-[#D1D1D1] rounded-[1rem] overflow-hidden shadow-lg">
+    <div className="flex flex-col border border-[#D1D1D1] bg-[#F4F3E8] rounded-[1rem] overflow-hidden shadow-lg">
       <div>
         <Image
           src={image}
@@ -26,15 +26,15 @@ const DishItemContainer = ({
           className="w-full h-full "
         />
       </div>
-      <div className="flex flex-col p-[2rem] w-full font-switzer">
+      <div className="flex flex-col p-[2rem] w-full font-switzer flex-1">
         <p className="text-primary-1 font-medium text-[1.8rem]">{name}</p>
-        <p className="text-secondary-2 text-[1.38rem] leading-[2rem] mb-[0.5rem]">
+        <p className="text-secondary-2 text-[1.2rem] leading-[2rem] mb-[0.5rem]">
           {description}
         </p>
-        <p className="text-[2rem] text-primary-1 font-semibold">
+        <p className="text-[2rem] text-primary-1 font-semibold mb-[3rem]">
           ${price.toFixed(2)}
         </p>
-        <div className="flex justify-between items-center w-full mt-[3rem]">
+        <div className="flex justify-between items-center w-full mt-auto">
           <button
             type="button"
             className="border-[0.2rem] border-primary-1 px-[1.5rem] py-[1rem] rounded-[0.5rem] text-primary-1 text-[1.36rem] font-medium capitalize cursor-pointer leading-[2rem]"
