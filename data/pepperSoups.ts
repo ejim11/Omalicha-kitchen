@@ -7,50 +7,55 @@ import assortedMeatPeppersoup from "../assets/menu/pepper-soups/Assorted Meat Pe
 import assortedMeatPeppersoupL from "../assets/menu/pepper-soups/Assorted Meat Peppersoup (L).png";
 
 export const pepperSoups: MenuItem = {
-  title: "Pepper Soups",
-  text: "Add White Rice $5.00",
-  dishItems: [
+  filter: "Pepper Soups",
+  items: [
     {
-      name: "Goat Meat Pepper Soup",
-      description:
-        "Hearty  broth soup made with goat meat chunks, pepper soup spice, and other nourishing condiments.",
-      price: 25,
-      image: goatMeatPepperSoup,
-    },
-    {
-      name: "Goat Meat Pepper Soup (L)",
-      description:
-        "Hearty  broth soup made with goat meat chunks, pepper soup spice, and other nourishing condiments.",
-      price: 30,
-      image: goatMeatPepperSoupL,
-    },
-    {
-      name: "Tilapia Pepper Soup",
-      description:
-        "Hearty  broth soup made with Tilapia, pepper soup spice, and other nourishing condiments.",
-      price: 25,
-      image: tilapiaPepperSoup,
-    },
-    {
-      name: "Catfish Pepper Soup",
-      description:
-        "Hearty  broth soup made with Catfish, pepper soup spice, and other nourishing condiments.",
-      price: 25,
-      image: catfishPepperSoup,
-    },
-    {
-      name: "Assorted Meat Peppersoup",
-      description:
-        "Hearty  broth soup made with Chicken, beef and goat meat spice, and other condiments.",
-      price: 25,
-      image: assortedMeatPeppersoup,
-    },
-    {
-      name: "Assorted Meat Peppersoup (L)",
-      description:
-        "Hearty  broth soup made with Chicken, beef and goat meat spice, and other condiments.",
-      price: 30,
-      image: assortedMeatPeppersoupL,
+      title: "Pepper Soups",
+      text: "Add White Rice $5.00",
+      dishItems: [
+        {
+          name: "Goat Meat Pepper Soup",
+          description:
+            "Hearty  broth soup made with goat meat chunks, pepper soup spice, and other nourishing condiments.",
+          price: 25,
+          image: goatMeatPepperSoup,
+        },
+        {
+          name: "Goat Meat Pepper Soup (L)",
+          description:
+            "Hearty  broth soup made with goat meat chunks, pepper soup spice, and other nourishing condiments.",
+          price: 30,
+          image: goatMeatPepperSoupL,
+        },
+        {
+          name: "Tilapia Pepper Soup",
+          description:
+            "Hearty  broth soup made with Tilapia, pepper soup spice, and other nourishing condiments.",
+          price: 25,
+          image: tilapiaPepperSoup,
+        },
+        {
+          name: "Catfish Pepper Soup",
+          description:
+            "Hearty  broth soup made with Catfish, pepper soup spice, and other nourishing condiments.",
+          price: 25,
+          image: catfishPepperSoup,
+        },
+        {
+          name: "Assorted Meat Peppersoup",
+          description:
+            "Hearty  broth soup made with Chicken, beef and goat meat spice, and other condiments.",
+          price: 25,
+          image: assortedMeatPeppersoup,
+        },
+        {
+          name: "Assorted Meat Peppersoup (L)",
+          description:
+            "Hearty  broth soup made with Chicken, beef and goat meat spice, and other condiments.",
+          price: 30,
+          image: assortedMeatPeppersoupL,
+        },
+      ],
     },
   ],
 };
