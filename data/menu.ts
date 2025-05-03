@@ -1,5 +1,6 @@
 import { DishItem } from "@/types/dishItem";
 import { traditionalSoups } from "./traditionalSoups";
+import { riceDishes } from "./riceDishes";
 
 export type MenuItem = {
   title: string;
@@ -7,4 +8,4 @@ export type MenuItem = {
   dishItems: DishItem[];
 };
 
-export const menu: MenuItem[] = [traditionalSoups];
+export const menu: MenuItem[] = [traditionalSoups, riceDishes];
