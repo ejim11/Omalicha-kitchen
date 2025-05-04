@@ -81,7 +81,7 @@ const Footer = () => {
           <MdCopyright className="mr-[0.5rem] text-black w-[2.4rem] h-[2.4rem]" />
           <p>2025 Omalicha Kitchen. All rights Reserved </p>
         </div>
-        <p>Designed &Developed by Qrest Company</p>
+        <p>Designed & Developed by Qrest Company</p>
       </div>
     </footer>
   );
