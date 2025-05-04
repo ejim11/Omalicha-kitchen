@@ -1,5 +1,5 @@
 import MenuComp from "@/components/Menu/MenuComp";
 
-export default function menu() {
+export default function Menu() {
   return <MenuComp />;
 }
