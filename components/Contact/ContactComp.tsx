@@ -31,7 +31,7 @@ const ContactComp = () => {
         title="Contact Us"
         text="Any  question or remark ? Just write us a message"
       >
-        <div className="py-[5rem] w-full flex flex-col font-switzer">
+        <div className="my-[4rem] w-full flex flex-col font-switzer">
           <div className="w-full flex justify-between ">
             <div className="w-[45%] flex flex-col justify-between">
               <div>
