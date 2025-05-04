@@ -14,7 +14,7 @@ const Header = () => {
   const navLinks: NavLink[] = [
     {
       title: "Our Menu",
-      link: "/menu",
+      link: "/menu?filter=traditional-soups",
     },
     {
       title: "Book a Table",
