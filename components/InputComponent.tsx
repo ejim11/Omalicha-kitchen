@@ -87,6 +87,9 @@ const InputComponent: React.FC<InputProps> = (props) => {
         <input
           autoFocus={props.autoFocus}
           disabled={props.disabled}
+          min={
+            props.type === "date" ? new Date().toISOString().slice(0, 10) : null
+          }
           type={
             props.type === "password"
               ? visible
@@ -97,14 +100,14 @@ const InputComponent: React.FC<InputProps> = (props) => {
           placeholder={props.placeholder}
           {...props.register(props.name, props.validation)}
           className={`${
-            props.border ? "" : "border "
+            props.border ? props.border : "border rounded-lg  "
           } bg-[#F4F3E8] placeholder:text-[#D1D1D1] font-switzer py-[1.2rem] relative ${
             props.pl ? props.pl : "pl-[4rem]"
           } pr-3 ${props.width ? props.width : "w-full"} ${
             props.height && props.height
           } ${
             props.shadow && props.shadow
-          } rounded-lg focus:ring-0 focus:outline-hidden outline-hidden ring-0 ${getErrorClass()} md:w-full`}
+          } focus:ring-0 focus:outline-hidden outline-hidden ring-0 ${getErrorClass()} md:w-full`}
         />
         {props.icon}
         {getPasswordIcon()}
