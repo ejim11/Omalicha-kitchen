@@ -21,4 +21,14 @@ export const registrationOption = {
       message: "Valid email address is required",
     },
   },
+  date: {
+    required: "Date is required",
+  },
+  phoneNumber: {
+    required: "Phone number is required",
+    pattern: {
+      value: /(?:\+?(\d{1,3}))?[\s.-]?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}/,
+      message: "Valid phone number is required",
+    },
+  },
 };
