@@ -3,10 +3,7 @@ import React, { useState } from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { registrationOption } from "@/utils/inputValidator";
 import InputComponent from "../InputComponent";
-import { FallingLines } from "react-loader-spinner";
-import { toastError, toastSuccess } from "@/utils/toastFuncs";
-import { FaRegCircleCheck } from "react-icons/fa6";
-import { LuBadgeAlert } from "react-icons/lu";
+import { sendMessage } from "@/utils/sendMessage";
 
 type FormData = {
   fullName: string;
@@ -16,7 +13,6 @@ type FormData = {
 const ContactUsForm = () => {
   const [message, setMessage] = useState<string>("");
   const [msgError, setMsgError] = useState<string>("");
-  const [loading, setIsLoading] = useState<boolean>(false);
 
   const {
     register,
@@ -47,6 +43,12 @@ const ContactUsForm = () => {
       setMsgError("Message should not exceed 150 characters");
       return;
     }
+
+    const contactStr = `Hello I want to contact you on: \n \n Message:${message} \n ${data.fullName} \n ${data.email}`;
+
+    sendMessage(contactStr);
+
+    resetForm();
   };
 
   return (
@@ -95,11 +97,7 @@ const ContactUsForm = () => {
         type="submit"
         className="mt-[2.4rem] flex items-center justify-center w-full py-[1rem] text-center text-[2rem] font-medium  font-switzer rounded-md bg-secondary-1 text-black"
       >
-        {loading ? (
-          <FallingLines color="#ffffff" width="30" visible={true} />
-        ) : (
-          "Submit"
-        )}
+        Submit
       </button>
     </form>
   );
