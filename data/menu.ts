@@ -5,6 +5,7 @@ import { pepperSoups } from "./pepperSoups";
 import { specials } from "./specials";
 import { kidsMenu } from "./kidsMenu";
 import { drinks } from "./drinks";
+import { sides } from "./sides";
 
 export type MenuItem = {
   filter: string;
@@ -18,4 +19,5 @@ export const menu: MenuItem[] = [
   specials,
   kidsMenu,
   drinks,
+  sides,
 ];
