@@ -105,7 +105,7 @@ const BookTableForm = ({ setReservationInfo }: { setReservationInfo: any }) => {
           error={errors}
           name={"date"}
           label="Date"
-          containerWidth="w-[28.8rem] max-sm:w-full"
+          containerWidth="w-[28.8rem] reserveDate"
           border="border rounded-[1.2rem]"
           pl="pl-[1rem]"
           validation={registrationOption.date}
