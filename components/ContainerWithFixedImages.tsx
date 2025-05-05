@@ -2,6 +2,7 @@ import React, { FC, ReactNode } from "react";
 import Image from "next/image";
 import flower1Img from "../assets/flower-1.png";
 import flower2Img from "../assets/flower-2.png";
+import FirstSection from "./FirstSection";
 
 const ContainerWithFixedImages: FC<{
   children: ReactNode;
@@ -44,9 +45,9 @@ const ContainerWithFixedImages: FC<{
         <h3 className="text-[3.2rem] font-poppins font-medium capitalize text-primary-1">
           {title}
         </h3>
-        <p className="leading-[2.4rem] text-[#181818] font-switzer w-[60%]">
+        <FirstSection containerClassName="leading-[2.4rem] text-[#181818] font-switzer w-[60%]">
           {text}
-        </p>
+        </FirstSection>
       </div>
       <div>{children}</div>
     </div>
