@@ -37,7 +37,7 @@ const OrderDishes = () => {
           View our menu
         </p>
         <Link
-          href={"/menu"}
+          href={"/menu?filter=all"}
           className="text-[#3F5143] font-medium  block  border-b border-b-[#3F5143] p-[0.2rem]"
         >
           View all
