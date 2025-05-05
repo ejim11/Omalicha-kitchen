@@ -37,16 +37,16 @@ export const metadata: Metadata = {
   title: "Omalicha Kitchen",
   description:
     "Enjoy your meals, order or book reservations to have the best meals in town",
-  metadataBase: new URL("https://nich-fashion.vercel.app/"),
+  metadataBase: new URL("https://omalicha-kitchen.vercel.app/"),
   authors: [{ name: "Ejim Favour," }, { name: "Qrest Company" }],
   openGraph: {
     description:
       "Enjoy your meals, order or book reservations to have the best meals in town",
     type: "website",
-    url: "https://nich-fashion.vercel.app/",
+    url: "https://omalicha-kitchen.vercel.app/",
     images: [
       {
-        url: "https://nich-fashion.s3.us-east-2.amazonaws.com/uploads/logo+(2).png",
+        url: "https://nich-fashion.s3.us-east-2.amazonaws.com/Screenshot+2025-05-05+at+17.23.40.png",
       },
     ],
   },
