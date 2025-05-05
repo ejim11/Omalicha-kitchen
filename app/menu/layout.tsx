@@ -1,5 +1,6 @@
 import MenuNav from "@/components/Menu/MenuNav";
 import type { Metadata } from "next";
+import { Suspense } from "react";
 
 export const metadata: Metadata = {
   title: "Omalicha Kitchen | Menu",
@@ -14,7 +15,9 @@ export default function RootLayout({
 }>) {
   return (
     <div>
-      <MenuNav>{children}</MenuNav>
+      <Suspense>
+        <MenuNav>{children}</MenuNav>
+      </Suspense>
     </div>
   );
 }
