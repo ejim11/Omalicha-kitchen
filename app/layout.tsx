@@ -6,6 +6,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import AppContextProvider from "@/store/appContextProvider";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -48,10 +49,12 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${poppins.variable} ${ojuju.variable} ${switzer.variable} antialiased relative bg-[#F4F3E8]`}
       >
-        <Header />
-        {children}
-        <Footer />
-        <ToastContainer />
+        <AppContextProvider>
+          <Header />
+          {children}
+          <Footer />
+          <ToastContainer />
+        </AppContextProvider>
       </body>
     </html>
   );
