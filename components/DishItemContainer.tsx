@@ -37,7 +37,7 @@ const DishItemContainer = ({
 
   return (
     <div className="flex w-full h-full flex-col border border-[#D1D1D1] bg-[#F4F3E8] rounded-[1rem] overflow-hidden shadow-lg">
-      <div>
+      <div className="w-full h-[17rem]">
         <Image
           src={image}
           alt={`${name} image`}
