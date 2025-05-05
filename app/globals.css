@@ -151,4 +151,27 @@
   .paginate-page-link.paginate-active-page-link {
     background-color: #c9e0cb;
   }
+
+  /* cart items scroll style */
+  .cartItems::-webkit-scrollbar {
+    width: 5px;
+    /* display: none; */
+  }
+
+  @keyframes showHeaderKeyFrame {
+    0% {
+      opacity: 0;
+    }
+    20% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .showHeader {
+    animation: showHeaderKeyFrame 1.5s ease-in;
+    -webkit-animation: showHeaderKeyFrame 1.5s ease-in;
+  }
 }
