@@ -1,7 +1,10 @@
+"use client";
 import { StaticImageData } from "next/image";
-import React from "react";
+import React, { useContext } from "react";
 import Image from "next/image";
 import { FiShoppingCart } from "react-icons/fi";
+import appContext from "@/store/appContext";
+import { useRouter } from "next/navigation";
 
 const DishItemContainer = ({
   image,
@@ -14,6 +17,24 @@ const DishItemContainer = ({
   description: string;
   price: number;
 }) => {
+  const { addItemToCart } = useContext(appContext);
+
+  const router = useRouter();
+
+  const addItemToCartHandler = () => {
+    addItemToCart({
+      name: name,
+      description: description,
+      price: price,
+      image: image,
+    });
+  };
+
+  const orderNowHandler = () => {
+    addItemToCartHandler();
+    router.push("/your-order");
+  };
+
   return (
     <div className="flex flex-col border border-[#D1D1D1] bg-[#F4F3E8] rounded-[1rem] overflow-hidden shadow-lg">
       <div>
@@ -37,11 +58,16 @@ const DishItemContainer = ({
         <div className="flex justify-between items-center w-full mt-auto">
           <button
             type="button"
+            onClick={orderNowHandler}
             className="border-[0.2rem] border-primary-1 px-[1.5rem] py-[1rem] rounded-[0.5rem] text-primary-1 text-[1.36rem] font-medium capitalize cursor-pointer leading-[2rem]"
           >
             Order now
           </button>
-          <button type="button" className="cursor-pointer">
+          <button
+            type="button"
+            className="cursor-pointer"
+            onClick={addItemToCartHandler}
+          >
             <FiShoppingCart className="w-[2.4rem] h-[2.4rem] text-primary-1" />
           </button>
         </div>
