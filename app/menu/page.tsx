@@ -1,10 +1,11 @@
+"use client";
 import MenuComp from "@/components/Menu/MenuComp";
-import { Suspense } from "react";
+import SuspenseWrapper from "@/components/SuspenseWrapper";
 
 export default function Menu() {
   return (
-    <Suspense>
+    <SuspenseWrapper>
       <MenuComp />
-    </Suspense>
+    </SuspenseWrapper>
   );
 }
