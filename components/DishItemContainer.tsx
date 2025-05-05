@@ -44,7 +44,7 @@ const DishItemContainer = ({
           priority
           width={500}
           height={500}
-          className="w-full h-full object-cover"
+          className="w-full h-full object-contain"
         />
       </div>
       <div className="flex flex-col p-[2rem] w-full font-switzer flex-1">
