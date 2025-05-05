@@ -3,8 +3,8 @@ import React from "react";
 
 const PlaceYourOrder = () => {
   return (
-    <section className="h-[64rem] w-full mt-[8rem] bg-place-order rounded-[1.6rem] overflow-hidden px-[7rem] max-2xl:px-[5rem] max-xl:px-[3rem] max-smd:p-[2rem] max-ssm:p-[1rem] flex flex-col justify-center">
-      <div className="text-white w-[50%] max-xl:w-[75%] max-xmd:w-full">
+    <section className="h-[64rem] w-full mt-[8rem] bg-place-order rounded-[1.6rem] overflow-hidden px-[7rem] max-2xl:px-[5rem] max-xl:px-[3rem] max-smd:p-[2rem] max-ssm:p-[1rem] flex flex-col justify-center ">
+      <div className="text-white w-[50%] max-xl:w-[75%] max-xmd:w-full max-smd:flex max-smd:flex-col max-smd:text-center max-smd:items-center ">
         <p className="font-switzer font-semibold text-[3.6rem] max-ssm:text-[3rem] leading-[4.6rem] mb-[1.6rem]">
           Looking for an African restaurant near you? Welcome to Omalicha
           Kitchen!
