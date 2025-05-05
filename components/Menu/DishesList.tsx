@@ -44,13 +44,17 @@ const DishesList = ({
     <div className="w-full flex flex-col" ref={sectionRef}>
       <div className="grid grid-cols-4 gap-[3rem] mt-[4rem] max-xlg:grid-cols-3 max-md:grid-cols-2 max-sm:gap-[2rem] max-ssm:grid-cols-1">
         {currentItems.map((dish: DishItem) => (
-          <DishItemContainer
+          <div
             key={dish.name + `-${Math.random() * 2000}`}
-            image={dish.image}
-            name={dish.name}
-            description={dish.description}
-            price={dish.price}
-          />
+            className="w-full h-full block shrink-0"
+          >
+            <DishItemContainer
+              image={dish.image}
+              name={dish.name}
+              description={dish.description}
+              price={dish.price}
+            />
+          </div>
         ))}
       </div>
       <div className="flex mt-[4rem] w-full    ">

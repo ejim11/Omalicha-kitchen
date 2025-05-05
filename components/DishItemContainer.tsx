@@ -37,17 +37,17 @@ const DishItemContainer = ({
 
   return (
     <div className="flex w-full h-full flex-col border border-[#D1D1D1] bg-[#F4F3E8] rounded-[1rem] overflow-hidden shadow-lg">
-      <div className="w-full h-[17rem]">
+      <div className="w-full h-[27rem]">
         <Image
           src={image}
           alt={`${name} image`}
           priority
           width={500}
           height={500}
-          className="w-full h-full object-contain"
+          className="w-full h-full object-cover"
         />
       </div>
-      <div className="flex flex-col p-[2rem] w-full font-switzer flex-1">
+      <div className="flex flex-col p-[2rem] w-full font-switzer flex-1 shrink-0">
         <p className="text-primary-1 font-medium text-[1.8rem]">{name}</p>
         <p className="text-secondary-2 text-[1.2rem] leading-[2rem] mb-[0.5rem]">
           {description}
