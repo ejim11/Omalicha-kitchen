@@ -12,15 +12,47 @@ const MenuComp = () => {
   const searchParamsObject = useMemo(
     () => ({
       filter: searchParams.get("filter") || undefined,
+      dish: searchParams.get("dish") || undefined,
     }),
     [searchParams]
   );
 
-  const menuItem: MenuItem[] = menu.filter(
-    (item: MenuItem) =>
-      item.filter.toLowerCase().split(" ").join("-") ===
-      searchParamsObject.filter
-  );
+  const allDishItems: DishItem[] = menu
+    .map((item: MenuItem) => item.items)
+    .flat()
+    .map(
+      (dhItem: { title: string; text: string; dishItems: DishItem[] }) =>
+        dhItem.dishItems
+    )
+    .flat()
+    .filter((dishItem: DishItem) => {
+      if (!searchParamsObject.dish) {
+        return dishItem;
+      }
+
+      return dishItem.name.toLowerCase().includes(searchParamsObject.dish);
+    });
+
+  const menuItem: MenuItem[] =
+    searchParamsObject.filter === "all" ||
+    searchParamsObject.filter === undefined
+      ? [
+          {
+            filter: "all",
+            items: [
+              {
+                title: "All Dishes",
+                text: "",
+                dishItems: allDishItems,
+              },
+            ],
+          },
+        ]
+      : menu.filter(
+          (item: MenuItem) =>
+            item.filter.toLowerCase().split(" ").join("-") ===
+            searchParamsObject.filter
+        );
 
   return (
     <section className="mt-[4rem] relative z-50">
@@ -32,7 +64,14 @@ const MenuComp = () => {
                 {item.title}
               </p>
               <p className="text-[1.8rem] text-[#797B78]">{item.text}</p>
-              <DishesList dishItems={item.dishItems} />
+              {item.dishItems.length > 0 ? (
+                <DishesList
+                  filter={searchParamsObject.filter}
+                  dishItems={item.dishItems}
+                />
+              ) : (
+                <p>No Dishes Found!</p>
+              )}
             </div>
           )
         )}
