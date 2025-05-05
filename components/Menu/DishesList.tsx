@@ -5,12 +5,18 @@ import { IoArrowBackOutline, IoArrowForwardOutline } from "react-icons/io5";
 import {} from "react-icons/io5";
 import ReactPaginate from "react-paginate";
 
-const DishesList = ({ dishItems }: { dishItems: DishItem[] }) => {
+const DishesList = ({
+  dishItems,
+  filter,
+}: {
+  dishItems: DishItem[];
+  filter?: string;
+}) => {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const sectionRef: any = useRef(null);
 
   const [itemOffset, setItemOffset] = useState(0);
-  const itemsPerPage = 8;
+  const itemsPerPage = filter === "all" || !filter ? 12 : 8;
 
   const endOffset = itemOffset + itemsPerPage;
   const currentItems = [...dishItems].slice(itemOffset, endOffset);
@@ -39,7 +45,7 @@ const DishesList = ({ dishItems }: { dishItems: DishItem[] }) => {
       <div className="grid grid-cols-4 gap-[3rem] mt-[4rem]">
         {currentItems.map((dish: DishItem) => (
           <DishItemContainer
-            key={dish.name}
+            key={dish.name + `-${Math.random() * 2000}`}
             image={dish.image}
             name={dish.name}
             description={dish.description}
