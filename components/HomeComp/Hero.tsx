@@ -1,9 +1,10 @@
 import Link from "next/link";
 import React from "react";
+import FirstSection from "../FirstSection";
 
 const Hero = () => {
   return (
-    <section className="bg-hero h-screen flex justify-center px-[9rem]  flex-col">
+    <FirstSection containerClassName="bg-hero h-screen flex justify-center px-[9rem]  flex-col">
       <div className="w-[75%]">
         <h2 className=" text-white font-ojuju  leading-[8.2rem] font-bold text-[9.6rem]">
           Taste of Home on your Plate
@@ -19,7 +20,7 @@ const Hero = () => {
           Explore our dishes
         </Link>
       </div>
-    </section>
+    </FirstSection>
   );
 };
 
