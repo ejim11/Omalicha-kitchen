@@ -29,16 +29,12 @@ const FirstSection: React.FC<{
   const callBackFn = useCallback((entries: any, _observer: any) => {
     const [entry] = entries;
 
-    console.log(!entry.isIntersecting);
-
     ctx.changeStickyHeader(!entry.isIntersecting);
   }, []);
 
   useEffect(() => {
     const current = containerRef.current;
     const observer = new IntersectionObserver(callBackFn, options);
-
-    console.log(current);
 
     if (current) observer.observe(current);
 

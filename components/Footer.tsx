@@ -9,8 +9,8 @@ import { FooterLinkData, footerLinksData } from "@/data/footerLinkdata";
 const Footer = () => {
   return (
     <footer className=" w-full  pb-[5rem]">
-      <div className="px-[9rem] flex justify-between">
-        <div className="flex flex-col justify-between">
+      <div className="px-[9rem] max-2xl:px-[5rem]  max-xl:px-[3rem] max-sm:px-[2rem]   flex max-xmd:flex-col justify-between">
+        <div className="flex flex-col justify-between max-ssm:items-center">
           <div className="w-[10rem]">
             <Image
               src={logoImg}
@@ -21,7 +21,7 @@ const Footer = () => {
               height={200}
             />
           </div>
-          <div className="flex items-center">
+          <div className="flex items-center max-ssm:mt-[2rem]">
             {mediaLinks.map((link: MediaLink) => (
               <Link
                 key={link.link}
@@ -41,7 +41,7 @@ const Footer = () => {
             ))}
           </div>
         </div>
-        <div className="flex gap-[5rem] font-switzer">
+        <div className="flex gap-[5rem] font-switzer max-xmd:mt-[3rem] max-smd:gap-[2rem] max-smd:flex-wrap max-ssm:flex-col max-ssm:items-center max-ssm:text-center max-xmd:justify-between max-ssm:gap-y-[3rem]">
           {footerLinksData.map((link: FooterLinkData) => (
             <div key={link.title}>
               <p className="font-medium leading-[1.8rem] tracking-[0.2rem] uppercase mb-[1rem]">
@@ -76,9 +76,9 @@ const Footer = () => {
           ))}
         </div>
       </div>
-      <div className="flex items-center justify-between pt-[2rem] border-t border-t-[#E7E7E7] px-[9rem] text-[1.4rem] font-switzer text-black leading-[1.6rem] mt-[2rem]">
-        <div className="flex items-center">
-          <MdCopyright className="mr-[0.5rem] text-black w-[2.4rem] h-[2.4rem]" />
+      <div className="flex items-center justify-between pt-[2rem] border-t border-t-[#E7E7E7] px-[9rem] max-2xl:px-[5rem]  max-xl:px-[3rem] max-sm:px-[2rem]  text-[1.4rem] font-switzer text-black leading-[1.6rem] mt-[2rem] max-sm:flex-col">
+        <div className="flex items-center max-sm:mb-[1rem]">
+          <MdCopyright className="mr-[0.5rem] text-black w-[2.4rem] h-[2.4rem] " />
           <p>2025 Omalicha Kitchen. All rights Reserved </p>
         </div>
         <p>Designed & Developed by Qrest Company</p>

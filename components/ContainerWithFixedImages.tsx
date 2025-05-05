@@ -42,10 +42,10 @@ const ContainerWithFixedImages: FC<{
         />
       </div>
       <div className="flex items-center flex-col text-center w-full z-40 relative">
-        <h3 className="text-[3.2rem] font-poppins font-medium capitalize text-primary-1">
+        <h3 className="text-[3.2rem] max-sm:text-[2.5rem] font-poppins font-medium capitalize text-primary-1">
           {title}
         </h3>
-        <FirstSection containerClassName="leading-[2.4rem] text-[#181818] font-switzer w-[60%]">
+        <FirstSection containerClassName="leading-[2.4rem] text-[#181818] font-switzer w-[60%] max-lg:w-[80%] max-xmd:w-[90%] max-smd:w-full">
           {text}
         </FirstSection>
       </div>

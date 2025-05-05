@@ -17,7 +17,7 @@ const CartItemComp = ({ cartItem }: { cartItem: CartItem }) => {
   };
 
   return (
-    <div className="border border-[#D1D1D1] w-full flex flex-col p-[2rem] rounded-[0.8rem] mb-[2.4rem] bg-[#F4F3E8]">
+    <div className="border border-[#D1D1D1] w-full flex flex-col p-[2rem] max-ssm:p-[1rem] rounded-[0.8rem] mb-[2.4rem] bg-[#F4F3E8]">
       <div className="w-[12.4rem] h-[12.4rem] rounded-[0.5rem] overflow-hidden">
         <Image
           src={cartItem.item.image}

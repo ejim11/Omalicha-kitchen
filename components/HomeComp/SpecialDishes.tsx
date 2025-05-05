@@ -8,7 +8,7 @@ const SpecialDishes = () => {
   return (
     <section>
       <TitleComp title="our special dishes" />
-      <div className="grid grid-cols-4 gap-[3rem]  mt-[3.5rem]">
+      <div className="grid grid-cols-4 gap-[3rem] max-lg:grid-cols-2  mt-[3.5rem] max-sm:gap-[2rem] max-ssm:grid-cols-1">
         {specialDishes.map((dish: DishItem) => (
           <div
             key={dish.name}

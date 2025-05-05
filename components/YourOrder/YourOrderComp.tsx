@@ -28,8 +28,8 @@ const YourOrderComp = () => {
           <h4 className="text-[2.4rem] font-bold font-switzer text-[#484848] mb-[2rem]">
             Order items
           </h4>
-          <div className="flex w-full justify-between">
-            <div className="w-[45%] ">
+          <div className="flex w-full justify-between  max-md:flex-col">
+            <div className="w-[45%] max-xlg:w-[50%] max-md:w-full  ">
               <div className="w-full pr-[1rem] cartItems">
                 {cartItems.map((item: CartItem) => (
                   <CartItemComp cartItem={item} key={item.item.name} />
@@ -90,7 +90,7 @@ const YourOrderComp = () => {
                 )}
               </div>
             </div>
-            <div className="w-[40%]">
+            <div className="w-[40%] max-xlg:w-[45%]  max-md:w-full max-md:mt-[3rem]  ">
               <OrderSummary deliveryOption={choosenDeliveryOption} />
             </div>
           </div>

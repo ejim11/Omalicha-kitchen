@@ -8,6 +8,16 @@
   --font-poppins: var(--font-poppins);
   --font-ojuju: var(--font-ojuju);
   --font-switzer: var(--font-switzer);
+  --breakpoint-*: initial;
+  --breakpoint-2xl: 1300px;
+  --breakpoint-xl: 1200px;
+  --breakpoint-xlg: 1100px;
+  --breakpoint-lg: 1000px;
+  --breakpoint-xmd: 900px;
+  --breakpoint-md: 800px;
+  --breakpoint-smd: 700px;
+  --breakpoint-sm: 600px;
+  --breakpoint-ssm: 500px;
 }
 
 @layer utilities {
@@ -40,9 +50,51 @@
 
   html {
     box-sizing: border-box;
-    /* 1rem = 10px */
-    font-size: 62.5%;
+    /* 1rem = 24px */
+    font-size: 150%;
     scroll-behavior: smooth !important;
+  }
+
+  @media screen and (max-width: 3000px) {
+    html {
+      /* 1rem = 16px */
+      font-size: 100%;
+    }
+  }
+
+  @media screen and (max-width: 2000px) {
+    html {
+      /* 1rem = 14px */
+      font-size: 87.5%;
+    }
+  }
+
+  @media screen and (max-width: 1800px) {
+    html {
+      /* 1rem = 12px */
+      font-size: 75%;
+    }
+  }
+
+  @media screen and (max-width: 1600px) {
+    html {
+      /* 1rem = 10px */
+      font-size: 62.5%;
+    }
+  }
+
+  @media screen and (max-width: 1100px) {
+    html {
+      /* 1rem = 9px */
+      font-size: 56.25%;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    html {
+      /* 1rem = 8px */
+      font-size: 50%;
+    }
   }
 
   body {
@@ -108,7 +160,7 @@
 
   @media all and (max-width: 850px) {
     ::-webkit-scrollbar {
-      width: 0px;
+      display: none;
     }
   }
 
@@ -173,5 +225,10 @@
   .showHeader {
     animation: showHeaderKeyFrame 1.5s ease-in;
     -webkit-animation: showHeaderKeyFrame 1.5s ease-in;
+  }
+
+  .menuNav::-webkit-scrollbar,
+  .orderMenu::-webkit-scrollbar {
+    display: none;
   }
 }

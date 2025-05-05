@@ -14,20 +14,22 @@ const AboutUsItem = ({
   text: string;
 }) => {
   return (
-    <div className="flex items-center justify-between my-[5.8rem] relative z-50">
+    <div className="flex items-center  max-md:flex-col justify-between my-[5.8rem] relative z-50">
       <div
-        className={`w-[45%] ${
-          index % 2 === 0 ? "order-1" : "order-2"
+        className={`w-[45%] max-md:w-full ${
+          index % 2 === 0 ? "order-1 " : "order-2 max-md:order-1"
         } font-switzer`}
       >
-        <h4 className="text-primary-1 border-b-[0.4rem] border-primary-1 w-max pb-[1rem] text-[3.2rem] font-medium mb-[2.4rem]">
+        <h4 className="text-primary-1 border-b-[0.4rem] border-primary-1 w-max pb-[1rem] text-[3.2rem] max-sm:text-[2.3rem] font-medium mb-[2.4rem]">
           {title}
         </h4>
-        <p className="text-[#484848] leading-[250%]">{text}</p>
+        <p className="text-[#484848] leading-[250%] max-sm:leading-[150%]">
+          {text}
+        </p>
       </div>
       <div
-        className={`flex w-[50%] justify-between items-center ${
-          index % 2 === 0 ? "order-2" : "order-1"
+        className={`flex w-[50%]  max-md:w-[90%] max-md:mt-[3rem]  justify-between items-center ${
+          index % 2 === 0 ? "order-2" : "order-1 max-md:order-2"
         }`}
       >
         <div

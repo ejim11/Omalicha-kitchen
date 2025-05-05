@@ -56,7 +56,7 @@ const BookTableForm = ({ setReservationInfo }: { setReservationInfo: any }) => {
   };
 
   const onSubmit: SubmitHandler<FormData> = async (data: FormData) => {
-    if (filteredReservationTime.length > 0) {
+    if (filteredReservationTime.length <= 0) {
       return;
     }
     if (message.length > 150) {
@@ -105,7 +105,7 @@ const BookTableForm = ({ setReservationInfo }: { setReservationInfo: any }) => {
           error={errors}
           name={"date"}
           label="Date"
-          containerWidth="w-[28.8rem]"
+          containerWidth="w-[28.8rem] max-ssm:w-full"
           border="border rounded-[1.2rem]"
           pl="pl-[1rem]"
           validation={registrationOption.date}
@@ -114,7 +114,7 @@ const BookTableForm = ({ setReservationInfo }: { setReservationInfo: any }) => {
           Available Time Slot
         </p>
         {filteredReservationTime.length > 0 ? (
-          <div className="grid grid-cols-4 gap-[2rem]">
+          <div className="grid grid-cols-4 gap-[2rem] max-smd:grid-cols-3">
             {filteredReservationTime.map((time: string) => (
               <button
                 type="button"
@@ -151,7 +151,7 @@ const BookTableForm = ({ setReservationInfo }: { setReservationInfo: any }) => {
         name={"fullName"}
         label="Full Name"
         pl="pl-[1rem]"
-        containerWidth="w-[45%]"
+        containerWidth="w-[45%] max-smd:w-full"
         border="border rounded-[1.2rem]"
         validation={registrationOption.fullname}
       />
@@ -163,7 +163,7 @@ const BookTableForm = ({ setReservationInfo }: { setReservationInfo: any }) => {
         name={"phoneNumber"}
         label="Phone Number"
         pl="pl-[1rem]"
-        containerWidth="w-[45%]"
+        containerWidth="w-[45%] max-smd:w-full"
         border="border rounded-[1.2rem]"
         validation={registrationOption.phoneNumber}
       />
@@ -207,17 +207,17 @@ const BookTableForm = ({ setReservationInfo }: { setReservationInfo: any }) => {
           <small className="text-red-500 mt-[0.5rem]">{msgError}</small>
         )}
       </div>
-      <div className="flex justify-end mt-[2.4rem] ">
+      <div className="flex justify-end mt-[2.4rem] max-ssm:flex-col ">
         <Link
           href={"/"}
-          className=" w-max py-[1rem] text-center text-[2rem] font-medium  font-switzer  bg-transparent text-[#3F5143] border-secondary-1 px-[8rem] border rounded-[1.6rem] mr-[2rem]"
+          className=" w-max py-[1rem] text-center text-[2rem] font-medium  font-switzer  bg-transparent text-[#3F5143] border-secondary-1 px-[8rem] max-smd:px-[3rem] border rounded-[1.6rem] mr-[2rem] max-ssm:w-full"
         >
           Cancel
         </Link>
         <button
           disabled={filteredReservationTime.length <= 0}
           type="submit"
-          className=" flex items-center justify-center w-max py-[1rem] text-center text-[2rem] font-medium  font-switzer rounded-[1.6rem]
+          className=" flex items-center justify-center w-max py-[1rem] text-center text-[2rem] max-ssm:w-full max-ssm:mt-[2.5rem] font-medium  font-switzer rounded-[1.6rem]
            bg-secondary-1 text-[#3F5143] px-[3rem] disabled:bg-gray-100 disabled:text-gray-200 disabled:cursor-not-allowed"
         >
           Confirm Reservation

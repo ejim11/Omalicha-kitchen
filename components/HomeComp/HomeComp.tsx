@@ -12,7 +12,7 @@ const HomeComp = () => {
   return (
     <main className="-mt-[10rem]">
       <Hero />
-      <div className="bg-[#F4F3E8] px-[9rem] py-[3rem] overflow-x-hidden">
+      <div className="bg-[#F4F3E8] px-[9rem] max-2xl:px-[5rem]  max-xl:px-[3rem] max-sm:px-[2rem]   py-[3rem] overflow-x-hidden">
         <SpecialDishes />
         <PlaceYourOrder />
         <OrderDishes />

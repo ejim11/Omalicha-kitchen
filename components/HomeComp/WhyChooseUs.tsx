@@ -6,9 +6,9 @@ import Image from "next/image";
 
 const WhyChooseUs = () => {
   return (
-    <section className="mt-[8rem] px-[3rem]">
+    <section className="mt-[8rem] px-[3rem] max-sm:px-0">
       <TitleComp title="Why People Choose  Us" />
-      <div className="grid grid-cols-4 gap-[3rem] mt-[5rem]">
+      <div className="grid grid-cols-4 gap-[3rem] mt-[5rem] max-smd:grid-cols-2 max-ssm:gap-[2rem]">
         {whyChooseUsData.map((data: WhyChooseUsType) => (
           <div
             key={data.title}

@@ -32,10 +32,10 @@ const ContactComp = () => {
         text="Any  question or remark ? Just write us a message"
       >
         <div className="my-[4rem] w-full flex flex-col font-switzer">
-          <div className="w-full flex justify-between ">
-            <div className="w-[45%] flex flex-col justify-between">
+          <div className="w-full flex max-md:flex-col justify-between ">
+            <div className="w-[45%] max-lg:w-[48%] max-md:w-full max-md:order-2  flex flex-col justify-between">
               <div>
-                <h3 className="text-[3.2rem] font-switzer font-medium text-[#484848] pb-[1rem] border-b-[0.4rem] w-max border-b-primary-1">
+                <h3 className="text-[3.2rem] max-sm:text-[2.3rem] font-switzer font-medium text-[#484848] pb-[1rem] border-b-[0.4rem] w-max border-b-primary-1">
                   Let Talk
                 </h3>
                 <p className="mt-[2.4rem] font-switzer">
@@ -44,12 +44,16 @@ const ContactComp = () => {
                   provide help
                 </p>
               </div>
-              <div className="font-switzer">
-                <p className="text-[3.2rem] text-black">Email</p>
+              <div className="font-switzer max-md:my-[2rem]">
+                <p className="text-[3.2rem] max-sm:text-[2.3rem]  text-black">
+                  Email
+                </p>
                 <p className="text-[#484848]">beebs@gmail.com</p>
               </div>
               <div className="font-switzer">
-                <p className="text-[3.2rem] text-black">Socials</p>
+                <p className="text-[3.2rem] max-sm:text-[2.3rem]  text-black">
+                  Socials
+                </p>
                 <div className="flex flex-col w-max">
                   {mediaLinks.map((link: { name: string; link: string }) => (
                     <Link
@@ -64,7 +68,7 @@ const ContactComp = () => {
                 </div>
               </div>
             </div>
-            <div className="w-[45%] relative z-50">
+            <div className="w-[45%] max-lg:w-[48%] max-md:w-full max-md:order-1 max-md:mb-[3rem] relative z-50">
               <ContactUsForm />
             </div>
           </div>

@@ -42,7 +42,7 @@ const DishesList = ({
 
   return (
     <div className="w-full flex flex-col" ref={sectionRef}>
-      <div className="grid grid-cols-4 gap-[3rem] mt-[4rem]">
+      <div className="grid grid-cols-4 gap-[3rem] mt-[4rem] max-xlg:grid-cols-3 max-md:grid-cols-2 max-sm:gap-[2rem] max-ssm:grid-cols-1">
         {currentItems.map((dish: DishItem) => (
           <DishItemContainer
             key={dish.name + `-${Math.random() * 2000}`}

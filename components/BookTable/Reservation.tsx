@@ -50,7 +50,7 @@ const Reservation = ({ reservation }: { reservation: Reservation }) => {
 
   return (
     <div className="flex items-center justify-center py-[4rem]">
-      <div className="border border-[#D1D1D1] w-[50%]">
+      <div className="border border-[#D1D1D1] w-[50%] max-xlg:w-[60%] max-xmd:w-[75%] max-smd:w-[90%] max-sm:w-full">
         <div className="bg-[#DDFFDF] text-center py-[3.3rem] font-switzer flex items-center flex-col">
           <p className="font-medium text-[2.4rem] text-[#484848] mb-[0.8rem]">
             Reservation {reservation.id}
@@ -60,7 +60,7 @@ const Reservation = ({ reservation }: { reservation: Reservation }) => {
             Status Confirmed
           </p>
         </div>
-        <div className=" py-[6rem] px-[4rem]">
+        <div className=" py-[6rem] px-[4rem] max-sm:px-[2rem]">
           <div className=" pb-[4rem] border-b border-b-[#D1D1D1]">
             {reservationData.map(
               (data: { title: string; value: string; icon: ReactNode }) => (

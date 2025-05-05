@@ -6,12 +6,12 @@ import CountDownTimer from "./CountDownTimer";
 
 const StockUpForTheWeek = () => {
   return (
-    <section className="my-[8rem] rounded-[1.6rem] flex overflow-hidden items-center pl-[7rem] justify-between bg-stockup ">
-      <div className="w-[35%] text-white font-switzer">
+    <section className="my-[8rem] rounded-[1.6rem] flex overflow-hidden items-center max-lg:items-stretch pl-[7rem] max-lg:pl-[3rem] max-xl:pl-[5rem]  justify-between bg-stockup  max-smd:flex-col max-smd:pl-0">
+      <div className="w-[35%] max-lg:w-[38%] max-smd:w-full max-smd:text-center max-smd:flex max-smd:flex-col max-smd:items-center text-white font-switzer max-lg:py-[3rem]">
         <div className="mb-[2rem]">
           <CountDownTimer targetDate={"2025-05-31T00:00:00"} />
         </div>
-        <p className=" font-semibold text-[4.2rem] leading-[3.7rem]">
+        <p className=" font-semibold text-[4.2rem] max-lg:text-[3.2rem] max-smd:text-[2.5rem] leading-[3.7rem]">
           Stock Up for the Week
         </p>
         <p className="my-[1.6rem] text-[1.3rem] w-[70%]">
@@ -25,14 +25,14 @@ const StockUpForTheWeek = () => {
           Order now
         </Link>
       </div>
-      <div className="w-[60%] ">
+      <div className="w-[60%] max-smd:w-full  ">
         <Image
           src={stockUpImg}
           alt="stock-up image"
           priority
           width={1000}
           height={1000}
-          className="w-full h-full"
+          className="w-full h-full max-smd:object-cover"
         />
       </div>
     </section>

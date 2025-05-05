@@ -3,13 +3,13 @@ import React from "react";
 
 const PlaceYourOrder = () => {
   return (
-    <section className="h-[64rem] w-full mt-[8rem] bg-place-order rounded-[1.6rem] overflow-hidden px-[7rem] flex flex-col justify-center">
-      <div className="text-white w-[50%]">
-        <p className="font-switzer font-semibold text-[3.6rem] leading-[4.6rem] mb-[1.6rem]">
+    <section className="h-[64rem] w-full mt-[8rem] bg-place-order rounded-[1.6rem] overflow-hidden px-[7rem] max-2xl:px-[5rem] max-xl:px-[3rem] max-smd:p-[2rem] max-ssm:p-[1rem] flex flex-col justify-center">
+      <div className="text-white w-[50%] max-xl:w-[75%] max-xmd:w-full">
+        <p className="font-switzer font-semibold text-[3.6rem] max-ssm:text-[3rem] leading-[4.6rem] mb-[1.6rem]">
           Looking for an African restaurant near you? Welcome to Omalicha
           Kitchen!
         </p>
-        <p className="text-[2rem] font-switzer text-[#F3F3F3]">
+        <p className="text-[2rem] max-ssm:text-[1.8rem] font-switzer text-[#F3F3F3]">
           Explore our tasty jollof rice, egusi soup, and all your favorite
           mouth-wavering African dishes prepared with love, care, and pride.
         </p>

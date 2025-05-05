@@ -10,7 +10,7 @@ import Link from "next/link";
 
 const OrderDishes = () => {
   return (
-    <section className="mt-[8rem] relative">
+    <section className="mt-[8rem] relative ">
       <div className="w-[13.6rem] absolute -top-[1rem] -left-[6rem]">
         <Image
           src={flowerImg}
@@ -43,15 +43,19 @@ const OrderDishes = () => {
           View all
         </Link>
       </div>
-      <div className=" mt-[2rem] grid grid-cols-3 gap-[3rem]">
+      <div className=" mt-[2rem] grid grid-cols-3 gap-[3rem] max-md:gap-0 max-md:flex max-md:flex-nowrap max-md:overflow-x-auto max-md:w-full orderMenu">
         {orderDishes.map((dish: DishItem) => (
-          <DishItemContainer
+          <div
             key={dish.name}
-            image={dish.image}
-            name={dish.name}
-            description={dish.description}
-            price={dish.price}
-          />
+            className="w-full h-full block max-md:w-[35rem] max-md:mr-[3rem] max-md:shrink-0"
+          >
+            <DishItemContainer
+              image={dish.image}
+              name={dish.name}
+              description={dish.description}
+              price={dish.price}
+            />
+          </div>
         ))}
       </div>
     </section>

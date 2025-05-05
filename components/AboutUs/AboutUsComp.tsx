@@ -24,7 +24,7 @@ const AboutUsComp = () => {
             ))}
           </div>
           <div className="w-full flex flex-col items-center text-center mt-[3rem] font-switzer">
-            <h3 className="font-medium text-[3.2rem] text-primary-1">
+            <h3 className="font-medium text-[3.2rem] max-sm:text-[2.3rem] text-primary-1">
               Order now
             </h3>
             <p className="text-[1.4rem] text-black">
