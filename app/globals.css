@@ -21,13 +21,6 @@
 }
 
 @layer utilities {
-  .bg-hero {
-    background-image: url("../assets/home/hero.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
   .bg-place-order {
     background-image: url("../assets/home/place-order.png");
     background-size: cover;
@@ -230,5 +223,13 @@
   .menuNav::-webkit-scrollbar,
   .orderMenu::-webkit-scrollbar {
     display: none;
+  }
+
+  .bg-hero {
+    background-image: linear-gradient(to bottom, rgba(48, 66, 52, 0.7)),
+      url("../assets/home/hero.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }
