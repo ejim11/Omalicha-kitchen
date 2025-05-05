@@ -5,7 +5,13 @@ import { sendMessage } from "@/utils/sendMessage";
 import { useRouter } from "next/navigation";
 import React, { useContext } from "react";
 
-const OrderSummary = ({ deliveryOption }: { deliveryOption: string }) => {
+const OrderSummary = ({
+  deliveryOption,
+  message,
+}: {
+  deliveryOption: string;
+  message: string;
+}) => {
   const { cartItems, emptyCart } = useContext(appContext);
 
   const router = useRouter();
@@ -43,7 +49,7 @@ const OrderSummary = ({ deliveryOption }: { deliveryOption: string }) => {
       `\n \n`
     )} \n\nDeliveryFee: $${deliveryFee} \n\nGrandTotal: $${
       subTotal + deliveryFee
-    }`;
+    } \n\nSpecial Intructions: ${message ? message : "none"}`;
 
     sendMessage(str);
 

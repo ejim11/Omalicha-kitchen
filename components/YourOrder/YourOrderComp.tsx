@@ -91,7 +91,10 @@ const YourOrderComp = () => {
               </div>
             </div>
             <div className="w-[40%] max-xlg:w-[45%]  max-md:w-full max-md:mt-[3rem]  ">
-              <OrderSummary deliveryOption={choosenDeliveryOption} />
+              <OrderSummary
+                deliveryOption={choosenDeliveryOption}
+                message={message}
+              />
             </div>
           </div>
         </div>
