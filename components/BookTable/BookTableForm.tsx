@@ -95,7 +95,7 @@ const BookTableForm = ({ setReservationInfo }: { setReservationInfo: any }) => {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
-      <div className="text-[#484848]">
+      <div className="text-[#484848] w-full">
         <p className="text-[2.4rem] font-switzer font-medium mb-[2rem] ">
           Select Date and Time
         </p>
@@ -105,7 +105,7 @@ const BookTableForm = ({ setReservationInfo }: { setReservationInfo: any }) => {
           error={errors}
           name={"date"}
           label="Date"
-          containerWidth="w-[28.8rem] max-ssm:w-full"
+          containerWidth="w-[28.8rem] max-sm:w-full"
           border="border rounded-[1.2rem]"
           pl="pl-[1rem]"
           validation={registrationOption.date}
