@@ -4,8 +4,8 @@ import FirstSection from "../FirstSection";
 
 const Hero = () => {
   return (
-    <FirstSection containerClassName="bg-hero  h-screen ">
-      <div className="flex justify-center w-full bg-[rgba(48,66,52,0.7)] h-full max-ssm:py-[8rem] max-ssm:min-h-screen px-[9rem] max-2xl:px-[5rem] max-xl:px-[3rem] max-sm:px-[2rem]  flex-col">
+    <FirstSection containerClassName="bg-hero  min-h-screen  ">
+      <div className="flex justify-center w-full bg-[rgba(48,66,52,0.7)] min-h-screen max-smd:py-[15rem]  px-[9rem] max-2xl:px-[5rem] max-xl:px-[3rem] max-sm:px-[2rem]  flex-col">
         <div className="w-[75%] max-xlg:w-full ">
           <h2 className=" text-white font-ojuju  leading-[8.2rem] max-sm:text-[7rem] max-sm:mb-[1rem] font-bold text-[9.6rem]">
             Taste of Home on your Plate
