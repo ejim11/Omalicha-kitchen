@@ -5,4 +5,5 @@ export type TestimonialType = {
   customerImage: StaticImageData;
   text: string;
   stars: number;
+  address: string;
 };

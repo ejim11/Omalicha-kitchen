@@ -10,6 +10,7 @@ import { testimonials } from "@/data/testimonials";
 import { FaStar } from "react-icons/fa6";
 import { SlStar } from "react-icons/sl";
 import Slider from "react-slick";
+import { TestimonialType } from "@/types/testimonial";
 
 const Testimonial = () => {
   const settings = {
@@ -47,7 +48,7 @@ const Testimonial = () => {
       <TitleComp title={"testimonial"} />
       <div className="w-[50%] max-2xl:w-[55%] max-xl:w-[60%] max-xlg:w-[70%] max-lg:w-[80%] max-md:w-[90%] max-smd:w-full mx-auto my-[6rem] ">
         <Slider {...settings}>
-          {testimonials.map((testimonial) => (
+          {testimonials.map((testimonial: TestimonialType) => (
             <div
               key={testimonial.customerName}
               className="px-[2rem] max-sm:px-[1rem]"
@@ -86,6 +87,9 @@ const Testimonial = () => {
                   </p>
                   <p className="font-bold text-[#101A24] leading-[2.9rem] mt-[1.6rem]">
                     {testimonial.customerName}
+                  </p>
+                  <p className="text-[1.4rem] text-gray-600">
+                    {testimonial.address}
                   </p>
                 </div>
               </div>
