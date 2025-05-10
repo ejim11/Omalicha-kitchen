@@ -7,10 +7,16 @@ export type FooterLinkData = {
 export const footerLinksData: FooterLinkData[] = [
   {
     title: "Contact Us",
-    texts: [
-      `123 Restaurant  Avenue, United Kingdom`,
-      "Phone: +314 547 345",
-      "Email : @omalichakitchen.com",
+    texts: [`1701 Cypress Creek Pkwy. Unit D, Houston, TX 77090`],
+    links: [
+      {
+        text: "Phone: (281) 781-7209",
+        link: "tel:(281) 781-7209",
+      },
+      {
+        text: "Email : support@omalichakitchen.com",
+        link: "mailto:support@omalichakitchen.com",
+      },
     ],
   },
   {

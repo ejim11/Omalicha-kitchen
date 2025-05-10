@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <footer className=" w-full  pb-[5rem]">
       <div className="px-[9rem] max-2xl:px-[5rem]  max-xl:px-[3rem] max-sm:px-[2rem]   flex max-xmd:flex-col justify-between">
-        <div className="flex flex-col justify-between max-ssm:items-center">
+        <div className="flex flex-col justify-between max-sm:items-center">
           <div className="w-[10rem]">
             <Image
               src={logoImg}
@@ -41,14 +41,14 @@ const Footer = () => {
             ))}
           </div>
         </div>
-        <div className="flex gap-[5rem] font-switzer max-xmd:mt-[3rem] max-smd:gap-[2rem] max-smd:flex-wrap max-ssm:flex-col max-ssm:items-center max-ssm:text-center max-xmd:justify-between max-ssm:gap-y-[3rem]">
+        <div className="flex gap-[5rem] font-switzer max-xmd:mt-[3rem] max-smd:gap-[2rem] max-smd:flex-wrap max-sm:flex-col max-sm:items-center max-sm:text-center max-xmd:justify-between max-sm:gap-y-[3rem]">
           {footerLinksData.map((link: FooterLinkData) => (
             <div key={link.title}>
               <p className="font-medium leading-[1.8rem] tracking-[0.2rem] uppercase mb-[1rem]">
                 {link.title}
               </p>
               {link.texts && (
-                <div>
+                <div className="mb-[1rem]">
                   {link.texts.map((text: string) => (
                     <p
                       key={text}
@@ -76,6 +76,7 @@ const Footer = () => {
           ))}
         </div>
       </div>
+
       <div className="flex items-center justify-between pt-[2rem] border-t border-t-[#E7E7E7] px-[9rem] max-2xl:px-[5rem]  max-xl:px-[3rem] max-sm:px-[2rem]  text-[1.4rem] font-switzer text-black leading-[1.6rem] mt-[2rem] max-sm:flex-col">
         <div className="flex items-center max-sm:mb-[1rem]">
           <MdCopyright className="mr-[0.5rem] text-black w-[2.4rem] h-[2.4rem] " />
