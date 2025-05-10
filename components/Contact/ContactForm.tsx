@@ -52,7 +52,7 @@ const ContactUsForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
+    <form onSubmit={handleSubmit(onSubmit)} className="w-full">
       <InputComponent
         placeholder={"Enter your name"}
         type={"text"}
