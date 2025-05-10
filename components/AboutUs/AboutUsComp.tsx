@@ -10,7 +10,7 @@ const AboutUsComp = () => {
     <MainContainer>
       <ContainerWithFixedImages
         title="About Us"
-        text="Welcome to Omalicha Kitchen, your go-to destination for delicious, home-cooked meals prepared with love, passion, and the highest hygiene standards. We take pride in serving fresh, flavorful, and nutritious dishes in a clean and well-maintained environment."
+        text="Omalicha Kitchen is a family-owned African restaurant in Houston, celebrating the rich, authentic flavors of West African cuisine in every dish."
       >
         <div className="w-full flex flex-col ">
           <div className="flex flex-col">
