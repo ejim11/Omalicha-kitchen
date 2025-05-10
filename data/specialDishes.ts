@@ -8,28 +8,26 @@ export const specialDishes: DishItem[] = [
   {
     name: "rice dishes",
     description:
-      "Lorem ipsum dolor sit , consectetur adipiscing elit, sed do eiusmod tempor",
+      "Variaties of tasty and flavorful rice dishes with your choice of protein.",
     price: 12,
     image: riceDishesImg,
   },
   {
     name: "pepper soup",
-    description:
-      "Lorem ipsum dolor sit , consectetur adipiscing elit, sed do eiusmod tempor",
+    description: "Spicy pepper soup with meat, assorted, or chicken.",
     price: 12,
     image: pepperSoupImg,
   },
   {
     name: "traditional soup",
-    description:
-      "Lorem ipsum dolor sit , consectetur adipiscing elit, sed do eiusmod tempor",
+    description: "Delicious varieties of rich, mouthwatering African soups.",
     price: 12,
     image: traditionalSoupImg,
   },
   {
     name: "oma special",
     description:
-      "Lorem ipsum dolor sit , consectetur adipiscing elit, sed do eiusmod tempor",
+      "Our signature dish—a rich, savory Omalicha Special prepared with love and a unique blend of spices.",
     price: 12,
     image: omaSpecialImg,
   },
