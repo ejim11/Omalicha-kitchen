@@ -6,7 +6,7 @@ export type AboutUsData = {
 export const aboutUsData: AboutUsData[] = [
   {
     title: "Our Mission",
-    text: "Omalicha Kitchen is a family-owned African restaurant in Houston, celebrating the rich, authentic flavors of West African cuisine in every dish.",
+    text: "We take pride in serving fresh, flavorful, and nutritious dishes in a clean and well-maintained environment.",
   },
   {
     title: "Our Story",
