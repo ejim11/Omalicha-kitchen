@@ -11,6 +11,7 @@ import { FaStar } from "react-icons/fa6";
 import { SlStar } from "react-icons/sl";
 import Slider from "react-slick";
 import { TestimonialType } from "@/types/testimonial";
+import noUserImage from "../../assets/no-user.jpg";
 
 const Testimonial = () => {
   const settings = {
@@ -54,9 +55,9 @@ const Testimonial = () => {
               className="px-[2rem] max-sm:px-[1rem]"
             >
               <div className="flex flex-col items-center w-full ">
-                <div className="w-[10rem] h-[10rem] z-30">
+                <div className="w-[10rem] h-[10rem] z-30 rounded-full overflow-hidden">
                   <Image
-                    src={testimonial.customerImage}
+                    src={noUserImage}
                     alt={`${testimonial.customerName} image`}
                     priority
                     width={300}
