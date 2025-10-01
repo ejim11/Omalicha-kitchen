@@ -5,7 +5,7 @@ import Image from "next/image";
 import { NavLink } from "@/types/navLink";
 import Link from "next/link";
 import { GoSearch } from "react-icons/go";
-import { FiShoppingCart } from "react-icons/fi";
+// import { FiShoppingCart } from "react-icons/fi";
 import { usePathname, useRouter } from "next/navigation";
 import appContext from "@/store/appContext";
 import { TfiMenuAlt } from "react-icons/tfi";
@@ -16,9 +16,9 @@ const Header = () => {
 
   const router = useRouter();
 
-  const { cartItems, isHeaderSticky } = useContext(appContext);
+  const { isHeaderSticky, changeIsOrderModalVisible } = useContext(appContext);
 
-  const [scaleUp, setScaleUp] = useState<boolean>(false);
+  // const [scaleUp, setScaleUp] = useState<boolean>(false);
 
   const [searchText, setSearchText] = useState<string>("");
 
@@ -60,17 +60,21 @@ const Header = () => {
     }
   };
 
-  useEffect(() => {
-    setScaleUp(true);
-    const timer = setTimeout(() => {
-      setScaleUp(false);
-    }, 200);
+  const openOrderModalHandler = () => {
+    changeIsOrderModalVisible(true);
+  };
 
-    return () => {
-      clearTimeout(timer);
-      setScaleUp(false);
-    };
-  }, [cartItems]);
+  // useEffect(() => {
+  //   setScaleUp(true);
+  //   const timer = setTimeout(() => {
+  //     setScaleUp(false);
+  //   }, 200);
+
+  //   return () => {
+  //     clearTimeout(timer);
+  //     setScaleUp(false);
+  //   };
+  // }, [cartItems]);
 
   useEffect(() => {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -150,8 +154,8 @@ const Header = () => {
           ))}
         </ul>
       </nav>
-      <div className="flex items-center max-smd:flex-1 max-smd:ml-[2rem]">
-        <div className="w-[14.6rem] max-lg:w-[22rem] max-xmd:w-[35rem] max-smd:w-full border rounded-[2.6rem] border-primary-1 flex items-center pl-[1rem]">
+      <div className="flex items-center max-lg:flex-1 max-lg:ml-[2rem] ">
+        <div className="w-[14.6rem] max-lg:flex-1 max-xmd:w-[35rem] max-smd:w-full border rounded-[2.6rem] border-primary-1 flex items-center pl-[1rem]">
           <GoSearch className="w-[1.8rem] h-[1.8rem] text-primary-1" />
           <div className="flex-1 overflow-hidden">
             <input
@@ -165,7 +169,7 @@ const Header = () => {
             />
           </div>
         </div>
-        <Link
+        {/* <Link
           href={"/your-order"}
           className="mx-[5rem] block relative max-lg:mx-[2rem] max-sm:mx-[1rem] "
         >
@@ -177,19 +181,19 @@ const Header = () => {
           >
             {cartItems.length}
           </span>
-        </Link>
-        <Link
-          href={"/book-table"}
-          className="font-switzer text-[1.8rem] max-lg:hidden"
+        </Link> */}
+        <button
+          onClick={openOrderModalHandler}
+          className="font-switzer text-[1.8rem] max-lg:hidden ml-[5rem] border px-[1.5rem] py-[0.8rem] rounded-[1.6rem] bg-primary-1 text-white border-primary-1 cursor-pointer"
         >
-          Order Online/Reservation
-        </Link>
+          Order Online
+        </button>
         <button
           type="button"
           onClick={() => {
             setMenuIsVisible(true);
           }}
-          className=" text-black hidden max-lg:block"
+          className=" text-black hidden max-lg:block max-lg:ml-[2rem]"
         >
           <TfiMenuAlt className="text-current w-[3rem] h-[3rem]" />
         </button>
