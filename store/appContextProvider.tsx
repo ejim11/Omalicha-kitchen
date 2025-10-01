@@ -11,7 +11,7 @@ const AppContextProvider: React.FC<{ children: React.ReactNode }> = ({
 }) => {
   const [isSticky, setIsSticky] = useState<boolean>(false);
   const [isOrderModalVisible, setIsOrderModalIsVisible] =
-    useState<boolean>(true);
+    useState<boolean>(false);
   const [cartItems, setCartItems] = useState<CartItem[]>([]);
 
   const onChangeStickerHeader = (val: boolean) => {
