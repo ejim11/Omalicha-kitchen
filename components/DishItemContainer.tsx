@@ -2,9 +2,9 @@
 import { StaticImageData } from "next/image";
 import React, { useContext } from "react";
 import Image from "next/image";
-import { FiShoppingCart } from "react-icons/fi";
+// import { FiShoppingCart } from "react-icons/fi";
 import appContext from "@/store/appContext";
-import { useRouter } from "next/navigation";
+// import { useRouter } from "next/navigation";
 
 const DishItemContainer = ({
   image,
@@ -17,22 +17,23 @@ const DishItemContainer = ({
   description: string;
   price: number;
 }) => {
-  const { addItemToCart } = useContext(appContext);
+  const { changeIsOrderModalVisible } = useContext(appContext);
 
-  const router = useRouter();
+  // const router = useRouter();
 
-  const addItemToCartHandler = () => {
-    addItemToCart({
-      name: name,
-      description: description,
-      price: price,
-      image: image,
-    });
-  };
+  // const addItemToCartHandler = () => {
+  //   addItemToCart({
+  //     name: name,
+  //     description: description,
+  //     price: price,
+  //     image: image,
+  //   });
+  // };
 
   const orderNowHandler = () => {
-    addItemToCartHandler();
-    router.push("/your-order");
+    // addItemToCartHandler();
+    // router.push("/your-order");
+    changeIsOrderModalVisible(true);
   };
 
   return (
@@ -52,7 +53,7 @@ const DishItemContainer = ({
         <p className="text-secondary-2 text-[1.2rem] leading-[2rem] mb-[0.5rem]">
           {description}
         </p>
-        <p className="text-[2rem] text-primary-1 font-semibold mb-[3rem]">
+        <p className="text-[2rem] text-primary-1 font-semibold mb-[3rem] mt-auto">
           ${price.toFixed(2)}
         </p>
         <div className="flex justify-between items-center w-full mt-auto">
@@ -63,13 +64,13 @@ const DishItemContainer = ({
           >
             Order now
           </button>
-          <button
+          {/* <button
             type="button"
             className="cursor-pointer"
             onClick={addItemToCartHandler}
           >
             <FiShoppingCart className="w-[2.4rem] h-[2.4rem] text-primary-1" />
-          </button>
+          </button> */}
         </div>
       </div>
     </div>
