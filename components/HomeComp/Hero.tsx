@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import FirstSection from "../FirstSection";
+import { SiDoordash, SiUbereats } from "react-icons/si";
 
 const Hero = () => {
   return (
@@ -14,12 +15,26 @@ const Hero = () => {
             African restaurant in Houston, Texas for rich, authentic dishes that
             bring family, culture, and comfort together.
           </p>
-          <Link
-            href={"/menu?filter=traditional-soups"}
-            className="bg-secondary-1 px-[3rem] py-[1rem] rounded-[1.6rem] mt-[2.4rem] font-switzer font-medium block w-max text-[2rem] text-black"
-          >
-            Explore our dishes
-          </Link>
+          <div className="flex items-center ">
+            <Link
+              href={" https://order.online/business/omalicha-kitchen-11710787"}
+              className="mr-[2rem] flex items-center bg-red-500 px-[3rem] py-[1rem] rounded-[1.6rem] mt-[2.4rem] font-switzer font-medium  w-max text-[2rem] text-white max-sm:flex-1"
+              target="_blank"
+            >
+              <SiDoordash className="mr-[1rem] w-[2.5rem] h-[2.5rem]" />
+              <span>Doordash</span>
+            </Link>
+            <Link
+              href={
+                "https://www.order.store/store/omalicha-kitchen/2QZV1cO-SNCJzO8g8HXsxw"
+              }
+              className="flex items-center bg-[#3FC060] px-[3rem] py-[1rem] rounded-[1.6rem] mt-[2.4rem] font-switzer font-medium  w-max text-[2rem] text-white max-sm:flex-1"
+              target="_blank"
+            >
+              <SiUbereats className="mr-[1rem] w-[2.5rem] h-[2.5rem]" />
+              <span>UberEats</span>
+            </Link>
+          </div>
         </div>
       </div>
     </FirstSection>
