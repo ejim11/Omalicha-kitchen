@@ -10,17 +10,17 @@ export const kidsMenu: MenuItem = {
       text: "(Your choice of: Pounded yam, Oat, or Garri)",
       dishItems: [
         {
-          name: "Jollof Rice & Chicken",
+          name: "Jollof Rice",
           description:
-            "Smoky Jollof rice served with juicy, well- seasoned chicken - a crowd- pleasing favorite every time.",
-          price: 6.99,
+            "Smoky Jollof rice served with juicy, a crowd- pleasing favorite every time.",
+          price: 8.99,
           image: jollofRiceChicken,
         },
         {
           name: "Beans",
           description:
             "Slow- cooked Nigerian-style beans, rich in flavor and perfectly spiced for a hearty, satisfying meal.",
-          price: 6.99,
+          price: 8.99,
           image: beans,
         },
       ],

@@ -21,42 +21,42 @@ export const mamaSpecials: {
       name: "Goat head & Rice",
       description:
         "A spicy delicacy made from goat head, simmered untill tender perfection",
-      price: 25,
+      price: 28,
       image: goatheadRice,
     },
     {
       name: "Ugba & Nkwobi",
       description:
         "A savory, nutritious soup made with slightly bitter leaves simmered with dry fish, and meats.",
-      price: 25,
+      price: 28,
       image: ugbaNkwobi,
     },
     {
       name: "Ugba  (L)",
       description:
         "Flavorful African salad, blended with spicy seasonings, onion s, and a touch of tradition in every bite.",
-      price: 30,
+      price: 33,
       image: ugbaL,
     },
     {
       name: "Yam Porridge",
       description:
         "Hearty and delicious yam porridge, simmered in a flavorful blend of spicies, palm oil, and fresh ingredients.",
-      price: 20,
+      price: 23,
       image: yamPorridge,
     },
     {
       name: "Nkwobi",
       description:
         "A soup made with spinach, collard greens and other greens mixture with goat meat, fish, palm oil, and African spices, simmered to perfection.",
-      price: 20,
+      price: 23,
       image: nkwobi,
     },
     {
       name: "Nkwobi (L)",
       description:
         "A soup made with spinach, collard greens and other greens mixture with goat meat, fish, palm oil, and African spices, simmered to perfection.",
-      price: 30,
+      price: 33,
       image: nkwobiL,
     },
     {
@@ -70,7 +70,7 @@ export const mamaSpecials: {
       name: "Yam Porridge (With Spinach & Meat)",
       description:
         "Rich and hearty yam porridge cooked with tender meat and fresh spinach.",
-      price: 30,
+      price: 33,
       image: yamPorridgeWithSpinachMeat,
     },
     {

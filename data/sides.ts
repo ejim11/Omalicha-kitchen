@@ -15,14 +15,14 @@ export const sides: MenuItem = {
       text: "(Your choice of: Pounded yam, Oat, or Garri)",
       dishItems: [
         {
-          name: "Plantain",
+          name: "Large Plantain",
           description:
             "Golden, sweet, and perfectly fried - deliciously crispy side you ‘ll always crave.",
           price: 10,
           image: plantain,
         },
         {
-          name: "Beans",
+          name: "Large Beans",
           description:
             "Slow- cooked Nigerian-style beans, rich in flavor and perfectly spiced for a hearty, satisfying meal.",
           price: 10,

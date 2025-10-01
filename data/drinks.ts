@@ -19,7 +19,7 @@ export const drinks: MenuItem = {
           name: "Bottled Water",
           description:
             "Refreshing, purified bottled water to keep you cool and hydrated.",
-          price: 1,
+          price: 1.5,
           image: bottledWater,
         },
         {
