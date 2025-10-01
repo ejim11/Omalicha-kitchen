@@ -2,13 +2,16 @@
 import React, { useState } from "react";
 import appContext from "./appContext";
 import { DishItem } from "@/types/dishItem";
+import OrderModal from "@/components/OrderModal";
 
 export type CartItem = { item: DishItem; choosenQty: number };
 
 const AppContextProvider: React.FC<{ children: React.ReactNode }> = ({
   children,
 }) => {
-  const [isSticky, setIsSticky] = useState(false);
+  const [isSticky, setIsSticky] = useState<boolean>(false);
+  const [isOrderModalVisible, setIsOrderModalIsVisible] =
+    useState<boolean>(true);
   const [cartItems, setCartItems] = useState<CartItem[]>([]);
 
   const onChangeStickerHeader = (val: boolean) => {
@@ -91,11 +94,17 @@ const AppContextProvider: React.FC<{ children: React.ReactNode }> = ({
     setCartItems([]);
   };
 
+  const onChangeIsOrderMenuIsVisibleHandler = (val: boolean) => {
+    setIsOrderModalIsVisible(val);
+  };
+
   return (
     <appContext.Provider
       value={{
         isHeaderSticky: isSticky,
         changeStickyHeader: onChangeStickerHeader,
+        isOrderModalVisible,
+        changeIsOrderModalVisible: onChangeIsOrderMenuIsVisibleHandler,
         cartItems: cartItems,
         addItemToCart: addItemToTheCart,
         increaseOrDecreaseCartItemQty: increaseOrDecreaseCartItemQty,
@@ -104,6 +113,7 @@ const AppContextProvider: React.FC<{ children: React.ReactNode }> = ({
       }}
     >
       {children}
+      <OrderModal />
     </appContext.Provider>
   );
 };

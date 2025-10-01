@@ -8,6 +8,8 @@ import { CartItem } from "./appContextProvider";
 type AppContextType = {
   isHeaderSticky: boolean;
   changeStickyHeader: (val: boolean) => void;
+  isOrderModalVisible: boolean;
+  changeIsOrderModalVisible: (val: boolean) => void;
   cartItems: CartItem[];
   addItemToCart: (item: DishItem) => void;
   increaseOrDecreaseCartItemQty: (item: DishItem, sign: string) => void;
@@ -18,6 +20,8 @@ type AppContextType = {
 const appContext = React.createContext<AppContextType>({
   isHeaderSticky: false,
   changeStickyHeader: (val: boolean) => {},
+  isOrderModalVisible: false,
+  changeIsOrderModalVisible: (val: boolean) => {},
   cartItems: [],
   addItemToCart: (item: DishItem) => {},
   increaseOrDecreaseCartItemQty: (item: DishItem, sign: string) => {},
