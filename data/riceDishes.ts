@@ -1,10 +1,10 @@
 import { MenuItem } from "./menu";
-import jollofRiceAssortedMeatImg from "../assets/menu/rice-dishes/jollof-rice -&-assorted-meat.png";
-import jollofRiceBeef from "../assets/menu/rice-dishes/Jollof Rice & Beef.png";
-import jollofRiceHen from "../assets/menu/rice-dishes/Jollof Rice & Hen.png";
-import jollofRiceChicken from "../assets/menu/rice-dishes/Jollof Rice & Chicken.png";
-import jollofRiceGoatMeat from "../assets/menu/rice-dishes/Jollof  Rice & Goat Meat.png";
-import jollofRiceFriedFish from "../assets/menu/rice-dishes/Jollof Rice & Fried Fish.png";
+import jollofRiceAssortedMeatImg from "../assets/menu/rice-dishes/jollof-rice -&-assorted-meat.jpg";
+import jollofRiceBeef from "../assets/menu/rice-dishes/Jollof Rice & Beef.jpg";
+import jollofRiceHen from "../assets/menu/rice-dishes/Jollof Rice & Hen.jpg";
+import jollofRiceChicken from "../assets/menu/rice-dishes/Jollof Rice & Chicken.jpg";
+import jollofRiceGoatMeat from "../assets/menu/rice-dishes/Jollof  Rice & Goat Meat.webp";
+import jollofRiceFriedFish from "../assets/menu/rice-dishes/Jollof Rice & Fried Fish.jpg";
 import whiteRiceDesignerStew from "../assets/menu/rice-dishes/White Rice & Designer Stew.png";
 import whiteRiceAsstMeatStew from "../assets/menu/rice-dishes/White Rice & Asst. Meat Stew.png";
 import whiteRiceBeefStew from "../assets/menu/rice-dishes/White Rice & Beef Stew.png";
@@ -63,8 +63,7 @@ export const riceDishes: MenuItem = {
         },
         {
           name: "White Rice & Designer Stew",
-          description:
-            "A spicy stew made from green peppers (Meat Options: Assorted Meat, Beef, Chicken, or Goat Meat)",
+          description: "A spicy stew made from green peppers",
           price: 28,
           image: whiteRiceDesignerStew,
         },

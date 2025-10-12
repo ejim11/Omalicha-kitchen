@@ -7,7 +7,8 @@ export const kidsMenu: MenuItem = {
   items: [
     {
       title: "Kid’s Menu",
-      text: "(Your choice of: Pounded yam, Oat, or Garri)",
+      // text: "(Your choice of: Pounded yam, Oat, or Garri)",
+      text: "",
       dishItems: [
         {
           name: "Jollof Rice",

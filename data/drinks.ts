@@ -3,10 +3,10 @@ import bottledWater from "../assets/menu/drinks/Bottled Water.png";
 import canSoda from "../assets/menu/drinks/Can Soda.png";
 import orangeJuice from "../assets/menu/drinks/Orange Juice.png";
 import malt from "../assets/menu/drinks/Malt.png";
-import soboDrink from "../assets/menu/drinks/Sobo Drink.png";
+// import soboDrink from "../assets/menu/drinks/Sobo Drink.png";
 import cramberryJuice from "../assets/menu/drinks/Cramberry Juice.png";
-import youghurtDrink from "../assets/menu/drinks/Youghurt Drink.png";
-import wine from "../assets/menu/drinks/Wine.png";
+// import youghurtDrink from "../assets/menu/drinks/Youghurt Drink.png";
+// import wine from "../assets/menu/drinks/Wine.png";
 
 export const drinks: MenuItem = {
   filter: "Drinks",
@@ -43,13 +43,13 @@ export const drinks: MenuItem = {
           price: 4,
           image: malt,
         },
-        {
-          name: "Sobo Drink",
-          description:
-            "Chilled hibiscus tea brewed with natural spiced - sweet, tangy,, and refreshing the local way.",
-          price: 3,
-          image: soboDrink,
-        },
+        // {
+        //   name: "Sobo Drink",
+        //   description:
+        //     "Chilled hibiscus tea brewed with natural spiced - sweet, tangy,, and refreshing the local way.",
+        //   price: 3,
+        //   image: soboDrink,
+        // },
         {
           name: "Cramberry Juice",
           description:
@@ -57,20 +57,20 @@ export const drinks: MenuItem = {
           price: 3,
           image: cramberryJuice,
         },
-        {
-          name: "Youghurt Drink",
-          description:
-            "Creamy, smooth, and deliciously refreshing - the perfect blend of taste and nourishment.",
-          price: 4,
-          image: youghurtDrink,
-        },
-        {
-          name: "Wine",
-          description:
-            "Elegant, smooth, and full-bodies - the perfect sip for moments worth savoring.",
-          price: 20,
-          image: wine,
-        },
+        // {
+        //   name: "Youghurt Drink",
+        //   description:
+        //     "Creamy, smooth, and deliciously refreshing - the perfect blend of taste and nourishment.",
+        //   price: 4,
+        //   image: youghurtDrink,
+        // },
+        // {
+        //   name: "Wine",
+        //   description:
+        //     "Elegant, smooth, and full-bodies - the perfect sip for moments worth savoring.",
+        //   price: 20,
+        //   image: wine,
+        // },
       ],
     },
   ],

@@ -3,15 +3,16 @@ import Image from "next/image";
 import React from "react";
 import stockUpImg from "../../assets/home/stock-up.png";
 // import CountDownTimer from "./CountDownTimer";
-import appContext from "@/store/appContext";
-import { useContext } from "react";
+// import appContext from "@/store/appContext";
+// import { useContext } from "react";
+import Link from "next/link";
 
 const StockUpForTheWeek = () => {
-  const { changeIsOrderModalVisible } = useContext(appContext);
+  // const { changeIsOrderModalVisible } = useContext(appContext);
 
-  const openModalHandler = () => {
-    changeIsOrderModalVisible(true);
-  };
+  // const openModalHandler = () => {
+  //   changeIsOrderModalVisible(true);
+  // };
 
   return (
     <section className="my-[8rem] rounded-[1.6rem] flex overflow-hidden items-center max-lg:items-stretch pl-[7rem] max-lg:pl-[3rem] max-xl:pl-[5rem]  justify-between bg-stockup  max-smd:flex-col max-smd:pl-0">
@@ -26,12 +27,18 @@ const StockUpForTheWeek = () => {
           Order varieties of meals today and enjoy fresh, nourishing meals all
           week!
         </p>
-        <button
+        <Link
+          href="tel:(281) 781-7209"
+          className="cursor-pointer bg-secondary-1 px-[3rem] py-[1rem] rounded-[1.6rem] mt-[2.4rem] font-switzer font-medium block w-max  text-black"
+        >
+          Contact us
+        </Link>
+        {/* <button
           onClick={openModalHandler}
           className="cursor-pointer bg-secondary-1 px-[3rem] py-[1rem] rounded-[1.6rem] mt-[2.4rem] font-switzer font-medium block w-max  text-black"
         >
           Order now
-        </button>
+        </button> */}
       </div>
       <div className="w-[60%] max-smd:w-full  ">
         <Image

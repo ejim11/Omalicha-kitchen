@@ -12,7 +12,8 @@ export const sides: MenuItem = {
   items: [
     {
       title: "Sides",
-      text: "(Your choice of: Pounded yam, Oat, or Garri)",
+      // text: "(Your choice of: Pounded yam, Oat, or Garri)",
+      text: "",
       dishItems: [
         {
           name: "Large Plantain",

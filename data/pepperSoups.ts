@@ -3,8 +3,8 @@ import goatMeatPepperSoup from "../assets/menu/pepper-soups/Goat Meat Pepper Sou
 import goatMeatPepperSoupL from "../assets/menu/pepper-soups/Goat Meat Pepper Soup (L).png";
 import tilapiaPepperSoup from "../assets/menu/pepper-soups/Tilapia Pepper Soup.png";
 import catfishPepperSoup from "../assets/menu/pepper-soups/Catfish Pepper Soup.png";
-import assortedMeatPeppersoup from "../assets/menu/pepper-soups/Assorted Meat Peppersoup .png";
-import assortedMeatPeppersoupL from "../assets/menu/pepper-soups/Assorted Meat Peppersoup (L).png";
+import assortedMeatPeppersoup from "../assets/menu/pepper-soups/Assorted Meat Peppersoup .jpg";
+import assortedMeatPeppersoupL from "../assets/menu/pepper-soups/Assorted Meat Peppersoup .jpg";
 
 export const pepperSoups: MenuItem = {
   filter: "Pepper Soups",

@@ -21,7 +21,7 @@ export const footerLinksData: FooterLinkData[] = [
   },
   {
     title: "Opening Hour",
-    texts: [`Monday - Friday: 10am - 10pm`, "Saturday - Sunday: 11am - 11pm"],
+    texts: [`Monday - Saturday: 11am - 10pm`],
   },
   {
     title: "Quick links",

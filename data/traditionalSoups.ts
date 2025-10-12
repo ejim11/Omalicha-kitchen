@@ -1,19 +1,20 @@
 import { MenuItem } from "./menu";
-import okraSoupImg from "../assets/menu/traditional-soups/okra-soup.png";
-import bitterLeafSoupImg from "../assets/menu/traditional-soups/bitter-leaf-soup.png";
-import egusiSoupImg from "../assets/menu/traditional-soups/egusi-soup.png";
-import ogbonoSoupImg from "../assets/menu/traditional-soups/ogbono-soup.png";
-import vegetableSoupImg from "../assets/menu/traditional-soups/vegetable-soup.png";
-import ohaSoupImg from "../assets/menu/traditional-soups/oha-soup.png";
-import seaFoodOkraSoup from "../assets/menu/traditional-soups/seafood-okro-soup.png";
-import seaFoodVegetableSoupImg from "../assets/menu/traditional-soups/seafood-vegetable-soup.png";
+import okraSoupImg from "../assets/menu/traditional-soups/okra-soup.jpg";
+import bitterLeafSoupImg from "../assets/menu/traditional-soups/bitter-leaf-soup.jpeg";
+import egusiSoupImg from "../assets/menu/traditional-soups/egusi-soup.jpg";
+import ogbonoSoupImg from "../assets/menu/traditional-soups/ogbono-soup.jpg";
+import vegetableSoupImg from "../assets/menu/traditional-soups/vegetable-soup.jpg";
+import ohaSoupImg from "../assets/menu/traditional-soups/oha-soup.jpg";
+import seaFoodOkraSoup from "../assets/menu/traditional-soups/seafood-okro-soup.jpg";
+import seaFoodVegetableSoupImg from "../assets/menu/traditional-soups/seafood-vegetable-soup.jpg";
+import afangSoupImg from "../assets/menu/traditional-soups/afang-soup.jpg";
 
 export const traditionalSoups: MenuItem = {
   filter: "Traditional Soups",
   items: [
     {
       title: "Traditional Soups",
-      text: "(Your choice of: Pounded yam, Oat, or Garri)",
+      text: "(Your choice of: Pounded yam, Oat, or Garri). (Meat Options: Assorted Meat, Beef, Chicken, or Goat Meat)",
       dishItems: [
         {
           name: "Okra Soup",
@@ -35,6 +36,12 @@ export const traditionalSoups: MenuItem = {
             "A nutty, tasty soup that combines blended Egusi (melon seeds), pepper, leafy vegetables, and meat.",
           price: 23,
           image: egusiSoupImg,
+        },
+        {
+          name: "Afang Soup",
+          description: "A peppery, afang leafy vegetables, and meat.",
+          price: 23,
+          image: afangSoupImg,
         },
         {
           name: "Ogbono Soup",
