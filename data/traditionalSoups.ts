@@ -4,7 +4,7 @@ import bitterLeafSoupImg from "../assets/menu/traditional-soups/bitter-leaf-soup
 import egusiSoupImg from "../assets/menu/traditional-soups/egusi-soup.jpg";
 import ogbonoSoupImg from "../assets/menu/traditional-soups/ogbono-soup.jpg";
 import vegetableSoupImg from "../assets/menu/traditional-soups/vegetable-soup.jpg";
-import ohaSoupImg from "../assets/menu/traditional-soups/oha-soup.jpg";
+import ohaSoupImg from "../assets/menu/traditional-soups/oha-soup.png";
 import seaFoodOkraSoup from "../assets/menu/traditional-soups/seafood-okro-soup.jpg";
 import seaFoodVegetableSoupImg from "../assets/menu/traditional-soups/seafood-vegetable-soup.jpg";
 import afangSoupImg from "../assets/menu/traditional-soups/afang-soup.jpg";

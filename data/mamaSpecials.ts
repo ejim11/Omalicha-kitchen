@@ -5,8 +5,8 @@ import ugbaL from "../assets/menu/specials/mama-specials/Ugba & Nkwobi.jpg";
 import yamPorridge from "../assets/menu/specials/mama-specials/Yam Porridge.png";
 import nkwobi from "../assets/menu/specials/mama-specials/Nkwobi.webp";
 import nkwobiL from "../assets/menu/specials/mama-specials/Nkwobi.webp";
-import abachaWithFish from "../assets/menu/specials/mama-specials/Abacha With Fish.png";
-import yamPorridgeWithSpinachMeat from "../assets/menu/specials/mama-specials/Yam Porridge (With Spinach & Meat).png";
+import abachaWithFish from "../assets/menu/specials/mama-specials/Abacha With Fish.jpg";
+import yamPorridgeWithSpinachMeat from "../assets/menu/specials/mama-specials/Yam Porridge (With Spinach & Meat).webp";
 // import riceFreshTilapiaStewWithPlantain from "../assets/menu/specials/mama-specials/Rice & Fresh Tilapia Stew ( With Plantain).png";
 
 export const mamaSpecials: {

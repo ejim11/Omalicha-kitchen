@@ -1,8 +1,8 @@
 import { MenuItem } from "./menu";
-import goatMeatPepperSoup from "../assets/menu/pepper-soups/Goat Meat Pepper Soup .png";
+import goatMeatPepperSoup from "../assets/menu/pepper-soups/Goat Meat Pepper Soup .jpg";
 import goatMeatPepperSoupL from "../assets/menu/pepper-soups/Goat Meat Pepper Soup (L).png";
 import tilapiaPepperSoup from "../assets/menu/pepper-soups/Tilapia Pepper Soup.png";
-import catfishPepperSoup from "../assets/menu/pepper-soups/Catfish Pepper Soup.png";
+import catfishPepperSoup from "../assets/menu/pepper-soups/Catfish Pepper Soup.jpg";
 import assortedMeatPeppersoup from "../assets/menu/pepper-soups/Assorted Meat Peppersoup .jpg";
 import assortedMeatPeppersoupL from "../assets/menu/pepper-soups/Assorted Meat Peppersoup .jpg";
 

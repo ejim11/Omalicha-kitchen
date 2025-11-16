@@ -9,7 +9,7 @@ import whiteRiceDesignerStew from "../assets/menu/rice-dishes/White Rice & Desig
 import whiteRiceAsstMeatStew from "../assets/menu/rice-dishes/White Rice & Asst. Meat Stew.png";
 import whiteRiceBeefStew from "../assets/menu/rice-dishes/White Rice & Beef Stew.png";
 import whiteRiceHenStew from "../assets/menu/rice-dishes/White Rice  & Hen Stew.png";
-import whiteRiceChickenStew from "../assets/menu/rice-dishes/White  Rice & Chicken Stew.png";
+import whiteRiceChickenStew from "../assets/menu/rice-dishes/White  Rice & Chicken Stew.jpg";
 import whiteRiceGoatMeatStew from "../assets/menu/rice-dishes/White  Rice & Goat Meat Stew.png";
 
 export const riceDishes: MenuItem = {

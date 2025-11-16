@@ -3,7 +3,7 @@ import plantain from "../assets/menu/sides/Plantain.png";
 import beans from "../assets/menu/sides/Beans.png";
 import spinach from "../assets/menu/sides/Spinach.png";
 import extraMeat from "../assets/menu/sides/Extra Meat.png";
-import whiteRice from "../assets/menu/sides/White Rice.png";
+import whiteRice from "../assets/menu/sides/White Rice.jpg";
 import extraEbaPoundedYam from "../assets/menu/sides/Extra Eba: Pounded Yam .png";
 import moiMoi from "../assets/menu/sides/Moi Moi.png";
 
