@@ -6,7 +6,7 @@ import ogbonoSoupImg from "../assets/menu/traditional-soups/ogbono-soup.jpg";
 import vegetableSoupImg from "../assets/menu/traditional-soups/vegetable-soup.jpg";
 import ohaSoupImg from "../assets/menu/traditional-soups/oha-soup.png";
 import seaFoodOkraSoup from "../assets/menu/traditional-soups/seafood-okro-soup.jpg";
-import seaFoodVegetableSoupImg from "../assets/menu/traditional-soups/seafood-vegetable-soup.jpg";
+import seaFoodVegetableSoupImg from "../assets/menu/traditional-soups/seafood-vegetable-soup.jpeg";
 import afangSoupImg from "../assets/menu/traditional-soups/afang-soup.jpg";
 
 export const traditionalSoups: MenuItem = {

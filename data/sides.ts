@@ -1,6 +1,6 @@
 import { MenuItem } from "./menu";
 import plantain from "../assets/menu/sides/Plantain.png";
-import beans from "../assets/menu/sides/Beans.png";
+import beans from "../assets/menu/sides/Beans.jpeg";
 import spinach from "../assets/menu/sides/Spinach.png";
 import extraMeat from "../assets/menu/sides/Extra Meat.png";
 import whiteRice from "../assets/menu/sides/White Rice.jpg";
