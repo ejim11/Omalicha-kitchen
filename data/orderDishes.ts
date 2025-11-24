@@ -1,6 +1,6 @@
 import { DishItem } from "@/types/dishItem";
-import orderDishImg1 from "../assets/home/order-dish-1.png";
-import orderDishImg2 from "../assets/home/order-dish-2.png";
+import orderDishImg1 from "../assets/menu/rice-dishes/White Rice & Beef Stew.jpeg";
+import orderDishImg2 from "../assets/menu/rice-dishes/Jollof Rice & Fried Fish.jpg";
 import orderDishImg3 from "../assets/home/order-dish-3.png";
 
 export const orderDishes: DishItem[] = [

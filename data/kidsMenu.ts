@@ -1,6 +1,6 @@
 import { MenuItem } from "./menu";
 import jollofRiceChicken from "../assets/menu/kids-menu/Jollof Rice & Chicken .png";
-import beans from "../assets/menu/kids-menu/Beans.png";
+import beans from "../assets/menu/sides/Beans.jpeg";
 
 export const kidsMenu: MenuItem = {
   filter: "Kid’s Menu",
