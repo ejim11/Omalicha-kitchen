@@ -29,10 +29,10 @@ const Header = () => {
       title: "Our Menu",
       link: "/menu",
     },
-    {
-      title: "Book a Table",
-      link: "/book-table",
-    },
+    // {
+    //   title: "Book a Table",
+    //   link: "/book-table",
+    // },
     {
       title: "About Us",
       link: "/about-us",
