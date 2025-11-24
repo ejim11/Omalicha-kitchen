@@ -27,7 +27,7 @@ const ContactComp = () => {
             />
           </div>
           <p className="mt-[2rem] leading-[250%] text-[#484848]">
-            Monday -Sunday :11am to 10pm
+            Monday - Saturday :11am to 10pm
           </p>
           <p className="text-[#484848]">Sunday Closed</p>
         </div>
