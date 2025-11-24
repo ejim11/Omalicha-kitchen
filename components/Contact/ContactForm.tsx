@@ -4,6 +4,7 @@ import { SubmitHandler, useForm } from "react-hook-form";
 import { registrationOption } from "@/utils/inputValidator";
 import InputComponent from "../InputComponent";
 import { sendMessage } from "@/utils/sendMessage";
+import Link from "next/link";
 
 type FormData = {
   fullName: string;
@@ -93,12 +94,14 @@ const ContactUsForm = () => {
         />
         <small>{msgError}</small>
       </div>
-      <button
-        type="submit"
+      <Link
+        href="https://mail.google.com/mail/?view=cm&fs=1&to=support@omalichakitchen.com&su=Support%20Request&body=Hello,%0D%0A%0D%0AI%20need%20help%20with..."
+        target="_blank"
+        rel="noopener noreferrer"
         className="mt-[2.4rem] flex items-center justify-center w-full py-[1rem] text-center text-[2rem] font-medium  font-switzer rounded-md bg-secondary-1 text-black"
       >
         Submit
-      </button>
+      </Link>
     </form>
   );
 };
