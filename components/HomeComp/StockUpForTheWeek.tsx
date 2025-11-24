@@ -28,7 +28,9 @@ const StockUpForTheWeek = () => {
           week!
         </p>
         <Link
-          href="tel:(281) 781-7209"
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=support@omalichakitchen.com&su=Support%20Request&body=Hello,%0D%0A%0D%0AI%20need%20help%20with..."
+          target="_blank"
+          rel="noopener noreferrer"
           className="cursor-pointer bg-secondary-1 px-[3rem] py-[1rem] rounded-[1.6rem] mt-[2.4rem] font-switzer font-medium block w-max  text-black"
         >
           Contact us
